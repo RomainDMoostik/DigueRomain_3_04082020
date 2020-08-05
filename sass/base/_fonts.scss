@@ -15,16 +15,40 @@
 // font-family: 'Zhi Mang Xing', cursive;
 
 // TITRES
-h3, h4{
+h1, h3, h4{
     font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 3em;
+    color: $black;
+    text-align: center;
+    font-weight: 500;
+}
+
+h2{
+    &.menu1{
+        font-family: $menu1-font1 ;
+        font-size: 4.4em;
+        color: $col-1note-txt;
+    }
+}
+
+h3, h4{
     color: $col-sec ;
     margin: auto;
 
 }
 
-h3{
+h3.btn{
     font-size: 4em;
     font-weight: 300;
+}
+
+h3.menu1{
+    font-size: 2.5em;
+    font-family: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+    color:$col-1note-txt;
 }
 
 h4{
@@ -34,13 +58,37 @@ h4{
 
 h5{
     font-size: 3em;
+    &.menu{
+        font-family: $menu-font ;
+    }
 }
 
 h6{
-    font-size: 2em;
+    font-size: 3em;
+    &.menu1{
+        font-family: $menu1-font1;
+    }
+    &.menu2{
+        font-family: $menu2-font1;
+    }
+    &.menu3{
+        font-family: $menu3-font1;
+    }
+    &.menu4{
+        font-family: $menu4-font1;
+    }
 }
 
-a.footer{
+a{
     text-decoration: none;
-    color: $col-sec;
-}
+    &.footer{
+        color: $col-sec;
+    }
+} 
+
+table.menu1{
+    font-size: 1.5em;
+    line-height: 3em;
+    color: $col-1note-txt;
+    font-family: $menu-font;
+} 

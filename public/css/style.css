@@ -12,15 +12,41 @@ body {
   margin: auto;
 }
 
-h3, h4 {
+.contenu-page {
+  margin-bottom: 120px;
+}
+
+h1, h3, h4 {
   font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  color: #353535;
+  text-align: center;
+  font-weight: 500;
+}
+
+h2.menu1 {
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 4.4em;
+  color: #3d1319;
+}
+
+h3, h4 {
   color: #fdcb46;
   margin: auto;
 }
 
-h3 {
+h3.btn {
   font-size: 4em;
   font-weight: 300;
+}
+
+h3.menu1 {
+  font-size: 2.5em;
+  font-family: "Segoe Print", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3d1319;
 }
 
 h4 {
@@ -31,14 +57,38 @@ h4 {
 h5 {
   font-size: 3em;
 }
-
-h6 {
-  font-size: 2em;
+h5.menu {
+  font-family: "Segoe Print", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-a.footer {
+h6 {
+  font-size: 3em;
+}
+h6.menu1 {
+  font-family: "Zhi Mang Xing", cursive;
+}
+h6.menu2 {
+  font-family: "Croissant One", cursive;
+}
+h6.menu3 {
+  font-family: "Dancing Script", cursive;
+}
+h6.menu4 {
+  font-family: "Kaushan Script", cursive;
+}
+
+a {
   text-decoration: none;
+}
+a.footer {
   color: #fdcb46;
+}
+
+table.menu1 {
+  font-size: 1.5em;
+  line-height: 3em;
+  color: #3d1319;
+  font-family: "Segoe Print", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -62,6 +112,7 @@ a.footer {
 
 .fa-music {
   font-size: 70px;
+  color: linear-gradient(red, yellow);
 }
 
 header {
@@ -73,13 +124,17 @@ header {
 }
 
 footer {
+  position: fixed;
+  bottom: 0em;
+  left: 0em;
+  width: 96%;
   display: flex;
   justify-content: space-between;
   height: 40px;
   background-color: #579c87;
   flex-direction: row;
   border-top: 4px #a1c181 solid;
-  padding: 50px;
+  padding: 2%;
 }
 
 .liste-menus {
@@ -111,6 +166,33 @@ footer {
 }
 .menu--4gout {
   background-color: #fdfffd;
+}
+
+.grandmenu {
+  box-shadow: 0px 0px 40px -20px #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1180px;
+  height: 1680px;
+  margin: auto;
+  text-align: center;
+}
+.grandmenu--1note {
+  background-color: #fcdfdb;
+}
+
+table {
+  width: 935px;
+}
+
+td.menu-plat {
+  text-align: left;
+}
+td.menu1-prix {
+  text-align: right;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

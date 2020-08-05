@@ -1,0 +1,12 @@
+$breakpoints: (
+    mobile: 800px,
+    tablette: 1000px,
+    petit-ecran: 1200px,
+    grand-ecran: 1400px
+);
+
+@mixin mobile {
+    @media screen and (max-width:map-get($breakpoint,mobile)) {
+        grid-template-columns: 1fr;
+    }
+}

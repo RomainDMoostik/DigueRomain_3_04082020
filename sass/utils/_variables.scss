@@ -2,19 +2,25 @@
 
 $col-prim: #579c87;
 $col-sec: #fdcb46;
+$black : #353535;
 $col-1note: #fcdfdb ;
 $col-2chic: #fff5fe;
 $col-3delice: #f9f9f9;
 $col-4gout: #fdfffd;
 $col-border: #a1c181;
 $col-shadow: #888;
+$col-1note-txt: #3d1319;
 
 // TAILLES BLOCS
 $logowidth: 450px;
 $size-border: 4px;
 $margin-btn : 4%;
-$menu-width : 540px;
-$menu-height: 760px;
+$footer-height:40px;
+$footer-padding: 2%;
+$small-menu-width: 540px;
+$small-menu-height: 760px;
+$big-menu-width : 1180px;
+$big-menu-height: 1680px;
 
 
 // SHADOW
@@ -25,3 +31,8 @@ $shadow-size : -20px;
 
 // TAILLES TYPOS
 $h1-size: 3em;
+$menu1-font1 : 'Zhi Mang Xing', cursive;
+$menu2-font1 : 'Croissant One', cursive;
+$menu3-font1 : 'Dancing Script', cursive;
+$menu4-font1 : 'Kaushan Script', cursive;
+$menu-font: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;

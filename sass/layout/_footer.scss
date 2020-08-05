@@ -1,9 +1,13 @@
 footer{
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
+    width: 100% - $footer-padding * 2;
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: $footer-height;
     background-color: $col-prim;
     flex-direction: row;
     border-top: $size-border $col-border solid ;
-    padding: 50px;
-}
+    padding: $footer-padding;
+} 

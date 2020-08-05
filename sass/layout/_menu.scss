@@ -11,8 +11,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: $menu-width;
-    height: $menu-height;
+    width: $small-menu-width;
+    height: $small-menu-height;
     margin: 4%;
     text-align: center;
     &--1note{
@@ -28,3 +28,33 @@
         background-color: $col-4gout;
     }
 }
+
+.grandmenu{
+    @include menu-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: $big-menu-width;
+    height: $big-menu-height;
+    margin: auto;
+    text-align: center;
+        &--1note{
+        background-color: $col-1note ;
+    }
+}
+
+table{
+    width: 935px;
+}
+
+td{
+    &.menu-plat{
+        text-align: left;
+    }
+    &.menu1-prix{
+        text-align: right;
+        font-weight: bold;
+    }
+}
+

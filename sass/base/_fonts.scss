@@ -1,0 +1,46 @@
+// <style>
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@700&family=Gelasio:wght@700&family=Kaushan+Script&family=Montserrat:wght@400;700&family=Zhi+Mang+Xing&display=swap');
+// </style> 
+
+// font-family: 'Croissant One', cursive;
+
+// font-family: 'Dancing Script', cursive;
+
+// font-family: 'Gelasio', serif;
+
+// font-family: 'Kaushan Script', cursive;
+
+// font-family: 'Montserrat', sans-serif;
+
+// font-family: 'Zhi Mang Xing', cursive;
+
+// TITRES
+h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    color: $col-sec ;
+    margin: auto;
+
+}
+
+h3{
+    font-size: 4em;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+h5{
+    font-size: 3em;
+}
+
+h6{
+    font-size: 2em;
+}
+
+a.footer{
+    text-decoration: none;
+    color: $col-sec;
+}

@@ -3,10 +3,16 @@
 @import "./utils/_mixins.scss";
 @import "./utils/_placeholders.scss";
 
-// @import "./base/_
+@import "./base/body.scss";
+@import "./base/_blocpage.scss";
+@import "./base/fonts.scss";
 
-// @import "./components/_
+@import "./components/_logo.scss";
+@import "./components/buttons";
+@import "./components/icons";
 
-// @import "./layout/_
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_menu.scss";
 
 // @import "./pages/_

@@ -1,0 +1,30 @@
+.liste-menus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu{
+    @include menu-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: $menu-width;
+    height: $menu-height;
+    margin: 4%;
+    text-align: center;
+    &--1note{
+        background-color: $col-1note ;
+    }
+    &--2chic{
+        background-color: $col-2chic;
+    }
+    &--3delice{
+        background-color: $col-3delice;
+    }
+    &--4gout{
+        background-color: $col-4gout;
+    }
+}

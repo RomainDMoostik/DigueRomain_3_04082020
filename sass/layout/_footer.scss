@@ -1,0 +1,9 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: $col-prim;
+    flex-direction: row;
+    border-top: $size-border $col-border solid ;
+    padding: 50px;
+}

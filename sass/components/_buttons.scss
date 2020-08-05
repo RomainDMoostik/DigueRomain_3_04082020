@@ -1,0 +1,13 @@
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-prochainement{
+    background-color: $col-prim;
+    border-radius: 20px;
+    height: 115px;
+    width: 650px;
+    margin : $margin-btn;
+    justify-content: center;
+}

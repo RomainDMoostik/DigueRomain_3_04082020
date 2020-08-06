@@ -1,0 +1,27 @@
+@keyframes wiggle{
+    0% {
+        transform: translateX($wiggleX);
+    }
+
+    100%{
+        transform: translateX($wiggleX*-1);
+    }
+}
+
+@keyframes underline{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+
+@keyframes points{
+    0%{
+        max-width: 0%;
+    }
+    100%{
+        max-width: 100%;
+    }
+}

@@ -11,3 +11,16 @@
     margin : $margin-btn;
     justify-content: center;
 }
+
+.points{
+    position: relative;
+    font-size: 3em;
+    &::before{
+        content: attr(data-points);
+        position:absolute;
+        overflow: hidden;
+        max-width: 3em;
+        white-space: nowrap;
+        animation: points 1s alternate-reverse;
+        }
+}

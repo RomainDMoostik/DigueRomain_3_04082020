@@ -36,3 +36,15 @@ $menu2-font1 : 'Croissant One', cursive;
 $menu3-font1 : 'Dancing Script', cursive;
 $menu4-font1 : 'Kaushan Script', cursive;
 $menu-font: 'Segoe Print', Tahoma, Geneva, Verdana, sans-serif;
+
+// KEYFRAMES
+    // WIGGLE
+$wiggleX: 5px;
+$wiggle-duration: 300ms;
+$wiggle-timing: cubic-bezier(.27,.08,.62,.81);
+    // MENU
+$menu-scale: scale(1.1);
+$menu-timing: 450ms;
+$menu-opacity: .5;
+$underline-timing: cubic-bezier(.48,.01,.7,.97);
+$underline-duration: 300ms;

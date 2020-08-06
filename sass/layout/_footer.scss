@@ -11,3 +11,11 @@ footer{
     border-top: $size-border $col-border solid ;
     padding: $footer-padding;
 } 
+
+.footer{
+    &__txt{
+        &:hover{
+            animation: wiggle $wiggle-duration $wiggle-timing infinite alternate-reverse;
+        }
+    }
+}

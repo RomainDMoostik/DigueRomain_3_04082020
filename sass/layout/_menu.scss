@@ -15,6 +15,9 @@
     height: $small-menu-height;
     margin: 4%;
     text-align: center;
+    transform: scale(1);
+    opacity: 1;
+    transition: all $menu-timing;
     &--1note{
         background-color: $col-1note ;
     }
@@ -26,6 +29,10 @@
     }
     &--4gout{
         background-color: $col-4gout;
+    }
+    &:hover{
+        transform: $menu-scale;
+        opacity: $menu-opacity;
     }
 }
 
@@ -58,3 +65,6 @@ td{
     }
 }
 
+.underbar{
+    color: red;
+}

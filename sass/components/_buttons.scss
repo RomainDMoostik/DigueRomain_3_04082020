@@ -13,10 +13,8 @@
 }
 
 .points{
-        font-size: 20px;
-        margin: 10px 0 0 10px;
-        white-space: nowrap;
+        white-space: normal;
         overflow: hidden;
         width: 3em;
-        animation: points 1s steps(60, end) alternate-reverse infinite; 
+        animation: points 2s infinite; 
 }

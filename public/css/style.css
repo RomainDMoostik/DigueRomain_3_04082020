@@ -56,6 +56,7 @@ h3.btn {
   font-size: 4em;
   font-weight: 300;
   padding-top: 3%;
+  text-align: left;
 }
 h3.menu1 {
   font-size: 1.5em;
@@ -172,12 +173,10 @@ table.menu1 {
 }
 
 .points {
-  font-size: 20px;
-  margin: 10px 0 0 10px;
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   width: 3em;
-  animation: points 1s steps(60, end) alternate-reverse infinite;
+  animation: points 2s infinite;
 }
 
 i.fas.fa-music {

@@ -1,4 +1,5 @@
-.fa-music{
+i.fas.fa-music{
     font-size: 70px;
-    color: linear-gradient(red, yellow);
+    @include gradient-menu1;
+    @include gradient-txt;
 }

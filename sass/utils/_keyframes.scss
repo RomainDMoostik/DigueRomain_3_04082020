@@ -18,10 +18,5 @@
 }
 
 @keyframes points{
-    0%{
-        max-width: 0%;
-    }
-    100%{
-        max-width: 100%;
-    }
+    from { width: 0; }
 }

@@ -6,7 +6,19 @@ $breakpoints: (
 );
 
 @mixin mobile {
-    @media screen and (max-width:map-get($breakpoint,mobile)) {
-        grid-template-columns: 1fr;
+    @media screen and (max-width:map-get($breakpoints,mobile)) {
+        @content;
+    }
+}
+
+@mixin tablette {
+    @media screen and (min-width:map-get($breakpoints,mobile)) and (max-width:map-get($breakpoints,tablette)) {
+        @content;
+    }
+}
+
+@mixin petit-ecran {
+    @media screen and (min-width:map-get($breakpoints,tablette)) and (max-width:map-get($breakpoints,petit-ecran)) {
+        @content;
     }
 }

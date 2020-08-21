@@ -1,7 +1,13 @@
 header{
     display: flex;
     width: 100%;
-    height: 245px ;
+    height: $header-height ;
     background-color: $col-prim;
     border-bottom: $size-border $col-border solid ;
+    @include mobile{
+        height: $header-height/2;
+    }
+    @include tablette{
+        height: $header-height/1.5;
+    }
 }

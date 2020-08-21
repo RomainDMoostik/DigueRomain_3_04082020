@@ -3,3 +3,23 @@ body{
     margin: 0px;
     max-width: 100%;
 }
+
+.blocpage{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contenu-page{
+    margin-bottom: $footer-height*5;
+    @include mobile{
+        margin-bottom: $footer-height*2 ;
+    }
+    @include tablette{
+        margin-bottom: $footer-height*3 ;
+    }
+    @include petit-ecran{
+        margin-bottom: $footer-height*4 ;
+    }
+}

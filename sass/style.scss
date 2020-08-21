@@ -6,7 +6,6 @@
 @import "./utils/responsive";
 
 @import "./base/body.scss";
-@import "./base/_blocpage.scss";
 @import "./base/fonts.scss";
 
 @import "./components/_logo.scss";
@@ -15,6 +14,9 @@
 
 @import "./layout/_header.scss";
 @import "./layout/_footer.scss";
-@import "./layout/_menu.scss";
 
-// @import "./pages/_
+@import "./pages/_menu_index.scss";
+@import "./pages/_menu1.scss";
+@import "./pages/_menu2.scss";
+@import "./pages/_menu3.scss";
+@import "./pages/_menu4.scss";

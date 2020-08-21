@@ -1,20 +1,61 @@
-.btn{
+.button{
     display: flex;
     justify-content: center;
+    margin: map-get($margin-btn, grand );
+    @include mobile {
+        margin: map-get($margin-btn, mobile );
+    }
+    @include tablette {
+        margin: map-get($margin-btn, tablette );
+    }
+    @include petit-ecran {
+        margin: map-get($margin-btn, petit );
+    }
 }
 
 .btn-prochainement{
+    display: flex;
+    justify-content: left;
     background-color: $col-prim;
     border-radius: 20px;
-    height: 115px;
-    width: 650px;
-    margin : $margin-btn;
-    justify-content: left;
+    height: map-get($btn-height, grand );
+    width: map-get($btn-width, grand );
+    margin-top: $footer-height*2;
+    padding-left: 4%;
+    @include mobile{
+        width: map-get($btn-width, mobile );
+        height: map-get($btn-height, mobile );
+    }
+    @include tablette{
+        width: map-get($btn-width, tablette );
+        height: map-get($btn-height, tablette );
+    }
+    @include petit-ecran{
+        width: map-get($btn-width, petit );
+        height: map-get($btn-height, petit );
+    }
 }
 
 .points{
-        white-space: normal;
-        overflow: hidden;
-        width: 3em;
-        animation: points 2s infinite; 
+    font-size: map-get($btn-font-size, grand );
+    font-weight: 300;
+    padding-top: 3%;
+    margin-left: 1%;
+    text-align: left;
+    color: $col-sec;
+    white-space: normal;
+    overflow: hidden;
+    width: 3em;
+    animation: points 1500ms infinite; 
+    @include mobile{
+        font-size: map-get($btn-font-size, mobile);
+    }
+    @include tablette{
+        font-size: map-get($btn-font-size, tablette);
+        margin-top : 4%;
+    }
+    @include petit-ecran{
+        font-size: map-get($btn-font-size, petit);
+        margin-top : 3%;
+    }
 }

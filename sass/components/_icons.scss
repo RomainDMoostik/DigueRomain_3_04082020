@@ -2,4 +2,41 @@ i.fas.fa-music{
     font-size: 70px;
     @include gradient-menu1;
     @include gradient-txt;
+    &.index{
+        font-size: map-get($icon1-index-size, grand );
+        @include mobile{
+            font-size: map-get($icon1-index-size, mobile );
+        }
+        @include tablette{
+            font-size: map-get($icon1-index-size, tablette );
+        }
+        @include petit-ecran{
+            font-size: map-get($icon1-index-size, petit );
+        }
+    }
+    &.header{
+        font-size: map-get($icon1-menu-header-size, grand );
+        margin-top: $icon1-menu-header-margintop;
+        @include mobile{
+            font-size: map-get($icon1-menu-header-size, mobile );
+        }
+        @include tablette{
+            font-size: map-get($icon1-menu-header-size, tablette );
+        }
+        @include petit-ecran{
+            font-size: map-get($icon1-menu-header-size, petit );
+        }
+    }
+    &.footer{
+        font-size: map-get($icon1-menu-footer, grand);
+        @include mobile {
+            font-size: map-get($icon1-menu-footer, mobile);
+        }
+        @include tablette {
+            font-size: map-get($icon1-menu-footer, tablette);
+        }
+        @include petit-ecran {
+            font-size: map-get($icon1-menu-footer, petit);
+        }
+    }
 }

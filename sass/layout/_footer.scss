@@ -10,6 +10,9 @@ footer{
     flex-direction: row;
     border-top: $size-border $col-border solid ;
     padding: $footer-padding;
+    @include mobile{
+        height : 30px;
+    }
 } 
 
 .footer{

@@ -91,21 +91,21 @@ $menu1-font-size: (  //ENTREE PLAT DESSERT
     );
     //H4
 $footer-font-size : ( //FOOTER
-    mobile : 1.4em,
+    mobile : 1.1em,
     tablette : 1.7em,
     petit : 2.5em,
     grand : 3em,
     );
     //H5
 $h5-font-size: (
-    mobile : 2.4em,
+    mobile : 2.2em,
     tablette : 3.2em,
     petit : 3.8em,
     grand : 4em
     );
     //H6
 $h6-font-size: (
-    mobile : 2em,
+    mobile : 1.7em,
     tablette : 2.3em,
     petit : 2.7em,
     grand : 3em,
@@ -194,5 +194,5 @@ $underline-duration: 300ms;
 $zoom-transition: 0.75s;
     // TRAIT ENTREE PLAT DESSERT
 $stroke-height: 5px;
-$bottom-stroke: 30px;
+$bottom-stroke: -.5em;
 $stroke-duration: 0.5s;

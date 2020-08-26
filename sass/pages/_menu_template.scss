@@ -1,10 +1,36 @@
-#menu1{
-    & .grandmenu {
-        background-color: $col-1note;
+hr.barre-menu1{
+    margin: auto;
+    width: 40%;
+    height: 1em;
+    background-image: url('barres-menus__gauche.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: none;
+    overflow : visible;
+}
+
+hr.barre-menu2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+hr{
+    flex: 1;
+    height: 1em;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: none;
+    //background-image: url('barres-menus__menu1G.svg');
+    &.D{
+        //transform: scaleX(-1);
+        //background-image: url('barres-menus__menu1D.svg');
     }
 }
 
-.grandmenu{
+.carte{
     @include menu-shadow;
     display: flex;
     align-items: center;
@@ -14,15 +40,17 @@
     height: $big-menu-height;
     margin: auto;
     text-align: center;
-        &--1note{
-        background-color: $col-1note ;
-    }
-        &--2chic{
-        background-color: $col-2chic ;
-    }
+}
+    
+table.carte{
+    width: 85%;
 }
 
-table{
+.plat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
     width: 85%;
 }
 
@@ -44,7 +72,7 @@ td{
     }
 }
 
-td.titre{
+h3.moment{
     text-align: center;
     display: inline-block;
     position: relative;
@@ -72,7 +100,6 @@ td.titre{
     justify-content: center;
     margin-bottom: $menu-footer-space;
 }
-
 
 .barre{
     width: map-get($barre1-width, grand ) ;

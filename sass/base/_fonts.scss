@@ -31,6 +31,14 @@ h1{
 }
 
 h2{
+    &.menu{
+        font-size: map-get($h2-size, resto1 );
+        color: $col-1note-txt;
+        margin-top: $h2-titre-menu-margin-top;
+        @include mobile{
+            font-size: map-get($h2-size-mobile, resto1 ) ;
+        }
+    }
     &.menu1{
         font-family: $menu1-font1 ;
         font-size: map-get($h2-size, resto1 );
@@ -64,17 +72,11 @@ h3{
         @include mobile{
             font-size: map-get($btn-font-size, mobile );
         }
-        }
-    &.menu1{ //ENTREE PLAT DESSERT
-        margin : 0em;
+    }
+    &.moment{ //ENTREE PLAT DESSERT
+        margin : 1em;
         font-size: map-get($menu1-font-size, grand );
         text-align: center;
-        font-family: 'Kalam', cursive;
-        color:$col-1note-txt;
-        }
-        &:hover{
-            animation: underline $underline-timing $underline-duration backwards;
-        }
         @include mobile {
             font-size: map-get($menu1-font-size, mobile );
         }
@@ -84,6 +86,7 @@ h3{
         @include petit-ecran {
             font-size: map-get($menu1-font-size, petit );
         }
+    }
 }
 
 h4{
@@ -183,7 +186,7 @@ a, a:visited, a:hover, a:active {
 
 //TABLEAU
 table{
-    &.menu1{
+    &.menu{
         font-size: map-get($table1-font-size, grand);
         line-height: map-get($table1-line-height, grand);
         color: $col-1note-txt;
@@ -219,10 +222,6 @@ table{
 p.footer{
     font-size: map-get($footer-menu1-font-size, grand );
     margin:0 0 0 0.5em;
-    &.menu1{
-        font-family: $menu1-font1;
-        color: $col-1note-txt;
-    }
     @include mobile{
         font-size: map-get($footer-menu1-font-size, mobile);
     }

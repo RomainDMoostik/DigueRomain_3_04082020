@@ -64,6 +64,16 @@ h1.titre-resto {
   }
 }
 
+h2.menu {
+  font-size: 4.4em;
+  color: #3d1319;
+  margin-top: 0.5em;
+}
+@media screen and (max-width: 800px) {
+  h2.menu {
+    font-size: 2.5em;
+  }
+}
 h2.menu1 {
   font-family: "Pacifico", cursive;
   font-size: 4.4em;
@@ -102,28 +112,23 @@ h3.btn {
     font-size: 2em;
   }
 }
-h3.menu1 {
-  margin: 0em;
+h3.moment {
+  margin: 1em;
   font-size: 1.5em;
   text-align: center;
-  font-family: "Kalam", cursive;
-  color: #3d1319;
-}
-h3:hover {
-  animation: underline cubic-bezier(0.48, 0.01, 0.7, 0.97) 300ms backwards;
 }
 @media screen and (max-width: 800px) {
-  h3 {
+  h3.moment {
     font-size: 0.8em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  h3 {
+  h3.moment {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h3 {
+  h3.moment {
     font-size: 1.2em;
   }
 }
@@ -135,7 +140,7 @@ h4.footer {
 }
 @media screen and (max-width: 800px) {
   h4.footer {
-    font-size: 1.4em;
+    font-size: 1.1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -172,7 +177,7 @@ h5.menu4 {
 }
 @media screen and (max-width: 800px) {
   h5 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -233,7 +238,7 @@ h6.menu4, h6:link.menu4 {
 }
 @media screen and (max-width: 800px) {
   h6, h6:link {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
@@ -254,24 +259,24 @@ a.footer, a:visited.footer, a:hover.footer, a:active.footer {
   color: #fdcb46;
 }
 
-table.menu1 {
+table.menu {
   font-size: 1.5em;
   line-height: 1em;
   color: #3d1319;
   font-family: "Kalam", cursive;
 }
 @media screen and (max-width: 800px) {
-  table.menu1 {
+  table.menu {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  table.menu1 {
+  table.menu {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  table.menu1 {
+  table.menu {
     font-size: 1.3em;
   }
 }
@@ -300,10 +305,6 @@ table.menu2 {
 p.footer {
   font-size: 3em;
   margin: 0 0 0 0.5em;
-}
-p.footer.menu1 {
-  font-family: "Pacifico", cursive;
-  color: #3d1319;
 }
 @media screen and (max-width: 800px) {
   p.footer {
@@ -509,6 +510,7 @@ footer {
   width: 96%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 40px;
   background-color: #579c87;
   flex-direction: row;
@@ -581,6 +583,126 @@ footer {
   transition: 0.75s;
 }
 
+hr.barre-menu1 {
+  margin: auto;
+  width: 40%;
+  height: 1em;
+  background-image: url("barres-menus__gauche.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: none;
+  overflow: visible;
+}
+
+hr.barre-menu2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+hr {
+  flex: 1;
+  height: 1em;
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border: none;
+}
+.carte {
+  box-shadow: 0px 0px 40px -20px #888;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+table.carte {
+  width: 85%;
+}
+
+.plat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 85%;
+}
+
+td {
+  padding-bottom: 2em;
+}
+td.menu-plat {
+  text-align: left;
+}
+td.menu-prix {
+  text-align: end;
+  font-weight: bold;
+}
+td.barre-gauche {
+  text-align: start;
+}
+td.barre-droite {
+  text-align: end;
+  width: 30%;
+}
+
+h3.moment {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+h3.moment::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  left: 0;
+  bottom: -0.5em;
+  background-color: #3d1319;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+h3.moment:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.barre {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .barre {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .barre {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .barre {
+    width: 75%;
+  }
+}
+
+#menu1 .grandmenu {
+  background-color: #fcdfdb;
+}
+
 .grandmenu {
   box-shadow: 0px 0px 40px -20px #888;
   display: flex;
@@ -633,7 +755,7 @@ td.titre::before {
   transform: scaleX(0);
   height: 5px;
   left: 0;
-  bottom: 30px;
+  bottom: -0.5em;
   background-color: #3d1319;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
@@ -650,21 +772,21 @@ td.titre:hover::before {
   margin-bottom: 2em;
 }
 
-.barre1 {
+.barre {
   width: 100%;
 }
 @media screen and (max-width: 800px) {
-  .barre1 {
+  .barre {
     width: 50%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .barre1 {
+  .barre {
     width: 60%;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .barre1 {
+  .barre {
     width: 75%;
   }
 }
@@ -679,9 +801,6 @@ td.titre:hover::before {
   height: 100%;
   margin: auto;
   text-align: center;
-}
-.grandmenu--2chic {
-  background-color: #fff5fe;
 }
 
 table {
@@ -718,7 +837,7 @@ td.titre::before {
   transform: scaleX(0);
   height: 5px;
   left: 0;
-  bottom: 30px;
+  bottom: -0.5em;
   background-color: #3d1319;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;

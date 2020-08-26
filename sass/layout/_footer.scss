@@ -5,6 +5,7 @@ footer{
     width: 100% - $footer-padding * 2;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: $footer-height;
     background-color: $col-prim;
     flex-direction: row;

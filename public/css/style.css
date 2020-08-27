@@ -925,7 +925,6 @@ h3.moment:hover::before {
   font-weight: 300;
 }
 .menu3 h3.moment {
-  width: 40%;
   font-size: 1.7em;
 }
 @media screen and (max-width: 800px) {
@@ -1038,6 +1037,9 @@ h3.moment:hover::before {
     font-size: 1.7em;
   }
 }
+.menu4 h3.moment::before {
+  background-color: #72bf56;
+}
 .menu4 table {
   width: 70%;
 }
@@ -1059,9 +1061,6 @@ h3.moment:hover::before {
   .menu4 table.base-menu {
     font-size: 1.3em;
   }
-}
-.menu4 table::before {
-  background-color: #72bf56;
 }
 .menu4 td.menu-plat {
   font-weight: 200;

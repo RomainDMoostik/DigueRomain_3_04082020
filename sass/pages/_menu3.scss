@@ -18,7 +18,6 @@
         font-weight: 300;
     }
     & h3.moment{
-        width: 40%;
         font-size: map-get($menu3-font-size, grand );
         @include mobile {
             font-size: map-get($menu3-font-size, mobile );

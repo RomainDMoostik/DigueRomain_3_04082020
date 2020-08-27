@@ -28,6 +28,9 @@
         @include petit-ecran {
             font-size: map-get($menu4-font-size, petit );
         }
+        &::before{
+            background-color: $col-4gout-txt;
+        }
     }
     & table{
         width: 70%;
@@ -43,9 +46,6 @@
             @include petit-ecran{
                 font-size: map-get($table1-font-size, petit);
             }
-        }
-        &::before{
-            background-color: $col-4gout-txt;
         }
     }
     td{

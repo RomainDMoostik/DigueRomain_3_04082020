@@ -16,7 +16,7 @@
 
 // TITRES
 h1, h3, h4{
-    font-family: 'Montserrat', sans-serif;
+    font-family: $lineale ;
 }
 
 h1{
@@ -58,6 +58,22 @@ h2{
         }
         @include petit-ecran{
             font-size: map-get($h2-footer-font-size, petit );
+        }
+    }
+    &.legal{
+        font-family: $lineale;
+        color : $black;
+        font-size: map-get($h2-legal-font-size, grand );
+        font-weight: 500;
+        margin: 3% 0 1% 0 ;
+        @include mobile{
+            font-size: map-get($h2-legal-font-size, mobile );
+        }
+        @include tablette{
+            font-size: map-get($h2-legal-font-size, tablette );
+        }
+        @include petit-ecran{
+            font-size: map-get($h2-legal-font-size, petit );
         }
     }
 }
@@ -171,6 +187,24 @@ h6, h6:link{
     }
 }
 
+p {
+    font-family: $lineale;
+    color: $black;
+    padding: 3%;
+    text-align: left;
+    line-height: 120%;
+    font-size: map-get($text, grand );
+    @include mobile {
+        font-size: map-get($text, mobile );
+    }
+    @include tablette {
+        font-size: map-get($text, tablette);
+    }
+    @include petit-ecran {
+        font-size: map-get($text, petit);
+    }
+}
+
 a, a:visited, a:hover, a:active {
     text-decoration: none;
         &.footer{
@@ -194,19 +228,5 @@ table{
         @include petit-ecran{
             font-size: map-get($table2-font-size, petit);
         }
-    }
-}
-
-p.footer-menu{
-    font-size: map-get($footer-menu1-font-size, grand );
-    margin:0 0 0 0.5em;
-    @include mobile{
-        font-size: map-get($footer-menu1-font-size, mobile);
-    }
-    @include tablette{
-        font-size: map-get($footer-menu1-font-size, tablette);
-    }
-    @include petit-ecran{
-        font-size: map-get($footer-menu1-font-size, petit);
     }
 }

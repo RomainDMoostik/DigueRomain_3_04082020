@@ -1,33 +1,37 @@
-hr.barre-menu1{
-    margin: auto;
-    width: 40%;
-    height: 1em;
-    background-image: url('barres-menus__gauche.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    border: none;
-    overflow : visible;
-}
-
-hr.barre-menu2{
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+/*.moment{
+    &::before{
+        content: "url('barres-menus__menu1D.svg')";
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        border: none;    
+        background-image: url('barres-menus__menu1D.svg') ;
+        padding: 0em 2em;
+    }
+    &::after{
+        content: "url('barres-menus__menu1D.svg')";
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: top center;
+        border: none;    
+        transform: scaleX(-1);
+        background-image: url('barres-menus__menu1D.svg') ;
+        padding: 0em 2em;
+    }
+} */
 
 hr{
-    flex: 1;
     height: 1em;
-    width: 100%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: top center;
     border: none;
+    margin : 0em;
     //background-image: url('barres-menus__menu1G.svg');
-    &.D{
+    // &.D{
         //transform: scaleX(-1);
         //background-image: url('barres-menus__menu1D.svg');
-    }
+    //}
 }
 
 .carte{
@@ -42,7 +46,7 @@ hr{
     text-align: center;
 }
     
-table.carte{
+table.base-menu{
     width: 85%;
 }
 
@@ -55,20 +59,35 @@ table.carte{
 }
 
 td{
-    padding-bottom: 2em;
+    padding: map-get($padding-menu-td, grand );
+    @include mobile{
+        padding-bottom: map-get($padding-menu-td, grand );
+    }
+    @include tablette{
+        padding-bottom: map-get($padding-menu-td, tablette );
+    }
+    @include petit-ecran{
+        padding-bottom: map-get($padding-menu-td, petit );
+    }
     &.menu-plat{
         text-align: left;
     }
     &.menu-prix{
         text-align: end;
-        font-weight: bold;
+        font-weight: 700;
     }
-    &.barre-gauche{
-        text-align: start;
+}
+
+.resto{
+    margin: map-get($header-menu-margin, grand );
+    @include mobile {
+        margin: map-get($header-menu-margin, mobile );
     }
-    &.barre-droite{
-        text-align: end;
-        width: $width-barre-menu1;
+    @include tablette {
+        margin: map-get($header-menu-margin, tablette );
+    }
+    @include petit-ecran {
+        margin: map-get($header-menu-margin, petit );
     }
 }
 
@@ -84,7 +103,7 @@ h3.moment{
         height: $stroke-height;
         left: 0;
         bottom: $bottom-stroke;
-        background-color: $col-1note-txt;
+        //background-color: $col-1note-txt;
         transform-origin: bottom right ;
         transition: transform $stroke-duration ease-out;           
     }
@@ -94,22 +113,19 @@ h3.moment{
     }
 }
 
-.menu-footer{
+.footer-menu{
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin-bottom: $menu-footer-space;
-}
-
-.barre{
-    width: map-get($barre1-width, grand ) ;
+    margin: map-get($footer-menu-margin, grand );
     @include mobile{
-        width: map-get($barre1-width, mobile ) ;
+        margin: map-get($footer-menu-margin, mobile );
     }
     @include tablette{
-        width: map-get($barre1-width, tablette ) ;
+        margin: map-get($footer-menu-margin, tablette );
     }
     @include petit-ecran{
-        width: map-get($barre1-width, petit ) ;
+        margin: map-get($footer-menu-margin, petit );
     }
 }

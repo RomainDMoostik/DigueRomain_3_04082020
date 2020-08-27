@@ -1,88 +1,59 @@
-#menu1{
-    & .grandmenu {
+.menu1{
+    & .carte{
         background-color: $col-1note;
     }
-}
-
-.grandmenu{
-    @include menu-shadow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: $big-menu-width;
-    height: $big-menu-height;
-    margin: auto;
-    text-align: center;
-        &--1note{
-        background-color: $col-1note ;
+    & hr{
+        width: 30%;
+        background-image: url('barres-menus__menu1G.svg');
+        &.D{
+            background-image: url('barres-menus__menu1D.svg');
+        }
     }
-        &--2chic{
-        background-color: $col-2chic ;
+    & h2 {
+        display: flex;
+        flex-direction: column;
+        font-family: $menu1-font1;
+        color: $col-1note-txt;
     }
-}
-
-table{
-    width: 85%;
-}
-
-td{
-    padding-bottom: 2em;
-    &.menu-plat{
-        text-align: left;
+    & table, h3.moment{
+        font-family: $menu-font;
+        color: $col-1note-txt;
+        font-size: map-get($menu1-font-size, grand );
+        text-align: center;
+        @include mobile {
+            font-size: map-get($menu1-font-size, mobile );
+        }
+        @include tablette {
+            font-size: map-get($menu1-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size: map-get($menu1-font-size, petit );
+        }
+        &.base-menu{
+            font-size: map-get($table1-font-size, grand);
+            line-height: map-get($table1-line-height, grand);
+            color: $col-1note-txt;
+            @include mobile{
+                font-size: map-get($table1-font-size, mobile);
+            }
+            @include tablette{
+                font-size: map-get($table1-font-size, tablette);
+            }
+            @include petit-ecran{
+                font-size: map-get($table1-font-size, petit);
+            }
+        }
+        &::before{
+            background-color: $col-1note-txt;
+        }
     }
-    &.menu-prix{
-        text-align: end;
-        font-weight: bold;
-    }
-    &.barre-gauche{
-        text-align: start;
-    }
-    &.barre-droite{
-        text-align: end;
-        width: $width-barre-menu1;
-    }
-}
-
-td.titre{
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: $stroke-height;
-        left: 0;
-        bottom: $bottom-stroke;
-        background-color: $col-1note-txt;
-        transform-origin: bottom right ;
-        transition: transform $stroke-duration ease-out;           
-    }
-    &:hover::before{
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    &td{
+        &.menu-plat {
+            font-weight: 300;
+        }
+        &.menu-prix{
+            font-weight: 700;
+        }
     }
 }
 
-.menu-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: $menu-footer-space;
-}
-
-
-.barre{
-    width: map-get($barre1-width, grand ) ;
-    @include mobile{
-        width: map-get($barre1-width, mobile ) ;
-    }
-    @include tablette{
-        width: map-get($barre1-width, tablette ) ;
-    }
-    @include petit-ecran{
-        width: map-get($barre1-width, petit ) ;
-    }
-}

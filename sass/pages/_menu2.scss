@@ -1,76 +1,87 @@
-.grandmenu{
-    @include menu-shadow;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: $big-menu-width;
-    height: $big-menu-height;
-    margin: auto;
-    text-align: center;
+.menu2{
+    & .carte{
+        background-color: $col-2chic;
+    }
+    & hr{
+        width: 30%;
+        //background-image: url('barres-menus__menu2G.svg');
+        &.D{
+        transform: scaleX(-1);
+        }
+    }
+    & h2 {
+        @include titre-menu2;
+    }
+    & table{
+        &.base-menu{
+            font-size: map-get($table1-font-size, grand);
+            line-height: map-get($table1-line-height, grand);
+            @include mobile{
+                font-size: map-get($table1-font-size, mobile);
+            }
+            @include tablette{
+                font-size: map-get($table1-font-size, tablette);
+            }
+            @include petit-ecran{
+                font-size: map-get($table1-font-size, petit);
+            }
+        }
+        /*&::before{
+            background-color: $col-2chic-txt-entree;
+        }*/
+    }
+    & h3.moment{
+        font-family: $menu2-font2;
+        font-size: map-get($menu2-font-size, grand );
+        text-align: center;
+        @include mobile {
+            font-size: map-get($menu2-font-size, mobile );
+        }
+        @include tablette {
+            font-size: map-get($menu2-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size: map-get($menu2-font-size, petit );
+        }
+    }
 
+    & .entree{
+        & hr{
+            background-image: url('barres-menus__menu2-entree.svg');
+        }
+        color : $col-2chic-txt-entree;
+        ::before{
+            background-color: $col-2chic-txt-entree;
+        }
+    }
+    
+    & .resistance{
+        & hr{
+            background-image: url('barres-menus__menu2-resistance.svg');
+        }
+        color : $col-2chic-txt-resistance;
+        ::before{
+            background-color: $col-2chic-txt-resistance;
+        }
+    }
+    
+    & .dessert{
+        & hr{
+            background-image: url('barres-menus__menu2-dessert.svg');
+        }
+        color : $col-2chic-txt-dessert;
+        ::before{
+            background-color: $col-2chic-txt-dessert;
+        }
+    }
+    
+    & td{
+        &.menu-plat {
+        font-weight: 200;
+        }
+        &.menu-prix{
+        font-weight: 300;
+        }
+    }
 }
 
-table{
-    width: 85%;
-}
-
-td{
-    padding-bottom: 2em;
-    &.menu-plat{
-        text-align: left;
-    }
-    &.menu-prix{
-        text-align: end;
-        font-weight: bold;
-    }
-    &.barre-gauche{
-        text-align: start;
-    }
-    &.barre-droite{
-        text-align: end;
-        width: $width-barre-menu1;
-    }
-}
-
-td.titre{
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    &::before{
-        content: '';
-        position: absolute;
-        width: 100%;
-        transform: scaleX(0);
-        height: $stroke-height;
-        left: 0;
-        bottom: $bottom-stroke;
-        background-color: $col-1note-txt;
-        transform-origin: bottom right ;
-        transition: transform $stroke-duration ease-out;           
-    }
-    &:hover::before{
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-}
-
-.menu-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: $menu-footer-space;
-}
-
-.barre1{
-    width: map-get($barre1-width, grand ) ;
-    @include mobile{
-        width: map-get($barre1-width, mobile ) ;
-    }
-    @include tablette{
-        width: map-get($barre1-width, tablette ) ;
-    }
-    @include petit-ecran{
-        width: map-get($barre1-width, petit ) ;
-    }
-}

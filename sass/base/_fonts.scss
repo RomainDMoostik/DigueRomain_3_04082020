@@ -1,9 +1,10 @@
 // <style>
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script:wght@700&family=Gelasio:wght@700&family=Kaushan+Script&family=Montserrat:wght@400;700');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;500;600;700&display=swap'); // Kalam // "menu"
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;500;700&display=swap'); //Bitter // menu 2 font 2
 // </style>
-    
+
 // font-family: 'Croissant One', cursive;
 // font-family: 'Dancing Script', cursive;
 // font-family: 'Gelasio', serif;
@@ -11,6 +12,7 @@
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Pacifico', cursive;
 // font-family: 'Kalam', cursive;
+// font-family: 'Bitter', serif;
 
 // TITRES
 h1, h3, h4{
@@ -20,7 +22,7 @@ h1, h3, h4{
 h1{
     &.titre-resto{
     font-size: $h1-titre-menu-size;
-    margin: 1.5em 0 1em 0;
+    margin: 1.5em .5em 1em .5em;
     color: $black;
     text-align: center; 
     font-weight: 700;
@@ -31,41 +33,39 @@ h1{
 }
 
 h2{
-    &.menu{
-        font-size: map-get($h2-size, resto1 );
+    &.resto{
+        font-size: map-get($h2-size, grand );
         color: $col-1note-txt;
-        margin-top: $h2-titre-menu-margin-top;
         @include mobile{
-            font-size: map-get($h2-size-mobile, resto1 ) ;
+            font-size: map-get($h2-size, mobile ) ;
+        }
+        @include tablette{
+            font-size: map-get($h2-size, tablette ) ;
+        }
+        @include petit-ecran{
+            font-size: map-get($h2-size, petit ) ;
         }
     }
-    &.menu1{
-        font-family: $menu1-font1 ;
-        font-size: map-get($h2-size, resto1 );
-        color: $col-1note-txt;
-        margin-top: $h2-titre-menu-margin-top;
+    &.footer-menu{
+        font-size: map-get($h2-footer-font-size, grand );
+        font-weight: 500;
+        margin:  0 0 0 .2em;
         @include mobile{
-            font-size: map-get($h2-size-mobile, resto1 ) ;
+            font-size: map-get($h2-footer-font-size, mobile );
+        }
+        @include tablette{
+            font-size: map-get($h2-footer-font-size, tablette );
+        }
+        @include petit-ecran{
+            font-size: map-get($h2-footer-font-size, petit );
         }
     }
-    &.menu2{
-    font-family: $menu2-font1 ;
-    font-size: map-get($h2-size, resto2 );
-    color: $col-2chic-txt;
-    margin-top: $h2-titre-menu-margin-top;
-    @include mobile{
-        font-size: map-get($h2-size-mobile, resto2 ) ;
-    }
-}
-}
-
-h3, h4{
-    color: $col-sec ;
 }
 
 h3{
     &.btn{
         font-size: map-get($btn-font-size, grand );
+        color: $col-sec ;
         font-weight: 300;
         text-align: left;
         margin-top: 3%;
@@ -75,7 +75,8 @@ h3{
     }
     &.moment{ //ENTREE PLAT DESSERT
         margin : 1em;
-        font-size: map-get($menu1-font-size, grand );
+        line-height: 120%;
+        /*font-size: map-get($menu1-font-size, grand );
         text-align: center;
         @include mobile {
             font-size: map-get($menu1-font-size, mobile );
@@ -85,26 +86,27 @@ h3{
         }
         @include petit-ecran {
             font-size: map-get($menu1-font-size, petit );
+        }*/
+    }
+}
+
+// Footer Mention légales/contact
+h4{
+    .footer{
+        color: $col-sec;
+        font-size : map-get($footer-font-size, grand );
+        @include mobile {
+            font-size : map-get($footer-font-size, mobile );
+        }
+        @include tablette {
+            font-size : map-get($footer-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size : map-get($footer-font-size, petit );
         }
     }
 }
 
-h4{
-    &.footer{
-    font-size: map-get($footer-font-size, grand );
-    font-weight: 500;
-    margin: 0;
-    @include mobile{
-        font-size: map-get($footer-font-size, mobile );
-    }
-    @include tablette{
-        font-size: map-get($footer-font-size, tablette );
-    }
-    @include petit-ecran{
-        font-size: map-get($footer-font-size, petit );
-    }
-    }
-}
 
 // "Menu" 4 menus index
 
@@ -119,7 +121,7 @@ h5{
         }
         &2{
             font-family: $menu-font2;
-            color: $col-2chic-txt;
+            color: $col-2chic-txt-entree;
         }
         &3{
             color: $col-3delice-txt;
@@ -147,24 +149,16 @@ h6, h6:link{
     font-size: map-get($h6-font-size, grand );
     margin: 0;
     &.menu1{
-        font-family: $menu1-font1;
-        color: $col-1note-txt;
+        @include titre-menu1;
     }
     &.menu2{
-        font-size: 2em;
-        font-family: $menu2-font1;
-        @include gradient-menu2;
-        @include gradient-txt;
+        @include titre-menu2;
     }
     &.menu3{
-        font-family: $menu3-font1;
-        @include gradient-menu3;
-        @include gradient-txt;
+        @include titre-menu3;
     }
     &.menu4{
-        font-family: $menu4-font1;
-        @include gradient-menu4;
-        @include gradient-txt;
+        @include titre-menu4;
     }
     @include mobile{
         font-size: map-get($h6-font-size, mobile );
@@ -186,25 +180,10 @@ a, a:visited, a:hover, a:active {
 
 //TABLEAU
 table{
-    &.menu{
-        font-size: map-get($table1-font-size, grand);
-        line-height: map-get($table1-line-height, grand);
-        color: $col-1note-txt;
-        font-family: $menu-font;
-        @include mobile{
-            font-size: map-get($table1-font-size, mobile);
-        }
-        @include tablette{
-            font-size: map-get($table1-font-size, tablette);
-        }
-        @include petit-ecran{
-            font-size: map-get($table1-font-size, petit);
-        }
-    }
-    &.menu2{
+    &.base-menu2{
         font-size: map-get($table2-font-size, grand);
         line-height: map-get($table2-line-height, grand);
-        color: $col-2chic-txt;
+        color: $col-2chic-txt-entree;
         font-family: $menu2-font1 ;
         @include mobile{
             font-size: map-get($table2-font-size, mobile);
@@ -218,8 +197,7 @@ table{
     }
 }
 
-// footer menu pleine page
-p.footer{
+p.footer-menu{
     font-size: map-get($footer-menu1-font-size, grand );
     margin:0 0 0 0.5em;
     @include mobile{

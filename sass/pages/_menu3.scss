@@ -1,0 +1,88 @@
+.menu3{
+    & .carte{
+        background-color: $col-3delice;
+    }
+    & hr{
+        //background-image: url('barres-menus__menu3G.svg');
+        width: 30%;
+        &.D{
+        transform: scaleX(-1);
+        }
+    }
+    & h2 {
+        @include titre-menu3;
+    }
+    & table, h3 {
+        font-family: $menu-font;
+        color: $col-3delice-txt-menu;
+        font-weight: 300;
+    }
+    & h3.moment{
+        width: 40%;
+        font-size: map-get($menu3-font-size, grand );
+        @include mobile {
+            font-size: map-get($menu3-font-size, mobile );
+        }
+        @include tablette {
+            font-size: map-get($menu3-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size: map-get($menu3-font-size, petit );
+        }
+    }
+    & table{
+        width: 70%;
+        &.base-menu{
+            font-size: map-get($table1-font-size, grand);
+            line-height: map-get($table1-line-height, grand);
+            @include mobile{
+                font-size: map-get($table1-font-size, mobile);
+            }
+            @include tablette{
+                font-size: map-get($table1-font-size, tablette);
+            }
+            @include petit-ecran{
+                font-size: map-get($table1-font-size, petit);
+            }
+        }
+        /*&::before{
+            background-color: $col-3delice-txt;
+        }*/
+    }
+
+    & .entree{
+        & hr{
+            background-image: url('barres-menus__menu3-entree.svg');
+        }
+        ::before{
+            background-color: $col-3delice-txt-entree;
+        }
+    }
+
+    & .resistance{
+            & hr{
+                background-image: url('barres-menus__menu3-resistance.svg');
+            }
+            ::before{
+                background-color: $col-3delice-txt-resistance;
+            }
+    }
+        
+    & .dessert{
+            & hr{
+                background-image: url('barres-menus__menu3-dessert.svg');
+            }
+            ::before{
+                background-color: $col-3delice-txt-dessert;
+            }
+    }
+        
+    & td{
+            &.menu-plat {
+            font-weight: 200;
+            }
+            &.menu-prix{
+            font-weight: 500;
+            }
+        }
+}

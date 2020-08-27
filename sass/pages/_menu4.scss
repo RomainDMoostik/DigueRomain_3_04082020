@@ -1,0 +1,63 @@
+.menu4{
+    & .carte{
+        background-color: $col-4gout;
+    }
+    & hr{
+        background-image: url('barres-menus__menu4G.svg');
+        width: 30%;
+        &.D{
+        transform: scaleX(-1);
+        }
+    }
+    & h2 {
+        @include titre-menu4;
+    }
+    & table, h3 {
+        font-family: $menu-font;
+        color: $col-4gout-txt-menu;
+        font-weight: 300;
+    }
+    & h3.moment{
+        font-size: map-get($menu4-font-size, grand );
+        @include mobile {
+            font-size: map-get($menu4-font-size, mobile );
+        }
+        @include tablette {
+            font-size: map-get($menu4-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size: map-get($menu4-font-size, petit );
+        }
+    }
+    & table{
+        width: 70%;
+        &.base-menu{
+            font-size: map-get($table1-font-size, grand);
+            line-height: map-get($table1-line-height, grand);
+            @include mobile{
+                font-size: map-get($table1-font-size, mobile);
+            }
+            @include tablette{
+                font-size: map-get($table1-font-size, tablette);
+            }
+            @include petit-ecran{
+                font-size: map-get($table1-font-size, petit);
+            }
+        }
+        &::before{
+            background-color: $col-4gout-txt;
+        }
+    }
+    td{
+        &.menu-plat {
+        font-weight: 200;
+        }
+        &.menu-prix{
+        font-weight: 500;
+        }
+    }
+}
+
+
+
+

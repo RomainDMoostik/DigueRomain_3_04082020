@@ -1,5 +1,4 @@
 i.fas.fa-music{
-    font-size: 70px;
     @include gradient-menu1;
     @include gradient-txt;
     &.index{
@@ -14,17 +13,20 @@ i.fas.fa-music{
             font-size: map-get($icon1-index-size, petit );
         }
     }
-    &.header{
+    &.resto{
         font-size: map-get($icon1-menu-header-size, grand );
-        margin-top: $icon1-menu-header-margintop;
+        margin-top: map-get($icon1-menu-header-margintop , grand ) ;
         @include mobile{
             font-size: map-get($icon1-menu-header-size, mobile );
+            margin-top: map-get($icon1-menu-header-margintop , mobile ) ;
         }
         @include tablette{
             font-size: map-get($icon1-menu-header-size, tablette );
+            margin-top: map-get($icon1-menu-header-margintop , tablette ) ;
         }
         @include petit-ecran{
             font-size: map-get($icon1-menu-header-size, petit );
+            margin-top: map-get($icon1-menu-header-margintop , petit ) ;
         }
     }
     &.footer{

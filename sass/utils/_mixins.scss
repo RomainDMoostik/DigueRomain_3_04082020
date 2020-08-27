@@ -1,7 +1,9 @@
+// Ombre Box Menu
 @mixin menu-shadow {
     box-shadow: $shadow-X $shadow-Y $shadow-prog $shadow-size $col-shadow ;    
 }
 
+// Dégradés Fonts
 @mixin gradient-menu1 {
     background-image: linear-gradient(to right, #f15861, #f78f6a);
 }
@@ -27,4 +29,29 @@
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+}
+
+// Titre Menus
+@mixin titre-menu1 {
+    font-family: $menu2-font1;
+    font-family: $menu1-font1;
+    color: $col-1note-txt;
+}
+
+@mixin titre-menu2 {
+    font-family: $menu2-font1;
+    @include gradient-menu2;
+    @include gradient-txt;
+}
+
+@mixin titre-menu3 {
+    font-family: $menu3-font1;
+    @include gradient-menu3;
+    @include gradient-txt;
+}
+
+@mixin titre-menu4 {
+    font-family: $menu4-font1;
+    @include gradient-menu4;
+    @include gradient-txt;
 }

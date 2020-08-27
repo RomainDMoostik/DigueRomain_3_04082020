@@ -10,9 +10,16 @@ $col-4gout: #fdfffd;
 $col-border: #a1c181;
 $col-shadow: #888;
 $col-1note-txt: #3d1319;
-$col-2chic-txt: #c77412;
+$col-2chic-txt-entree: #c77412;
+$col-2chic-txt-resistance: #a56799;
+$col-2chic-txt-dessert: #6e4ccc;
 $col-3delice-txt: #0887fb;
+$col-3delice-txt-entree : #0228dd;
+$col-3delice-txt-resistance : #0670f3;
+$col-3delice-txt-dessert : #229df9;
+$col-3delice-txt-menu: #333;
 $col-4gout-txt: #72bf56;
+$col-4gout-txt-menu: #444;
 
 
 // TAILLES BLOCS
@@ -49,13 +56,30 @@ $margin-btn : (
     // GRAND MENU
 $big-menu-width : 85%;
 $big-menu-height: 100%;
-$menu-footer-space: 2em;
-
+$header-menu-margin : (
+    mobile : .9em 0em .4em 0em,
+    tablette : 1.3 0em .6em 0em,
+    petit : 1.7 0em .8em 0em,
+    grand : 2em 0em 1em 0em
+    );
+$footer-menu-margin :  (
+    mobile : 2em 0 2.5em 0,
+    tablette : 3em 0 4em 0,
+    petit : 4.5em 0 6em 0,
+    grand : 6em 0 8em 0 
+    );
+$padding-menu-td : (
+    mobile : .1em 0 .5em 0 ,
+    tablette : .1em 0 .6em 0 ,
+    petit : .2em 0 .8em 0 ,
+    grand : .2em 0em 1em 0 ,
+);
 
 // TAILLES TYPOS
     // FAMILLES
 $menu1-font1 : 'Pacifico', cursive;
 $menu2-font1 : 'Croissant One', cursive;
+$menu2-font2 : 'Bitter', serif;
 $menu3-font1 : 'Dancing Script', cursive;
 $menu4-font1 : 'Kaushan Script', cursive;
 $menu-font: 'Kalam', cursive;
@@ -65,16 +89,16 @@ $h1-titre-menu-size: 4em;
     //H2
 $h2-titre-menu-margin-top: 0.5em;
 $h2-size: (
-    resto1 : 4.4em,
-    resto2 : 4.4em,
-    resto3 : 4.4em,
-    resto4 : 4.4em
+    mobile : 1.5em,
+    tablette : 2.5em,
+    petit: 3em,
+    grand : 4em,
 );
-$h2-size-mobile: (
-    resto1 : 2.5em,
-    resto2 : 2.5em,
-    resto3 : 2.5em,
-    resto4 : 2.5em
+$h2-footer-font-size: (
+    mobile : 1.2em,
+    tablette : 1.8em,
+    petit: 2.5em,
+    grand : 3em,
 );
     //H3
 $btn-font-size: (
@@ -84,17 +108,35 @@ $btn-font-size: (
     grand : 4em,
     );
 $menu1-font-size: (  //ENTREE PLAT DESSERT
-    mobile : 0.8em,
-    tablette : 1em,
-    petit : 1.2em,
-    grand : 1.5em,
+    mobile : 1em,
+    tablette : 1.5em,
+    petit : 2em,
+    grand : 2.8em,
+    );
+$menu2-font-size: (  //ENTREE PLAT DESSERT
+    mobile : 1em,
+    tablette : 1.5em,
+    petit : 2em,
+    grand : 1.7em,
+    );
+$menu3-font-size: (  //ENTREE PLAT DESSERT
+    mobile : 1em,
+    tablette : 1.5em,
+    petit : 2em,
+    grand : 1.7em,
+    );
+$menu4-font-size: (  //ENTREE PLAT DESSERT
+    mobile : 1em,
+    tablette : 1.2em,
+    petit : 1.7em,
+    grand : 2em,
     );
     //H4
 $footer-font-size : ( //FOOTER
-    mobile : 1.1em,
-    tablette : 1.7em,
-    petit : 2.5em,
-    grand : 3em,
+    mobile : .8em,
+    tablette : 1.2em,
+    petit : 1.5em,
+    grand : 2em,
     );
     //H5
 $h5-font-size: (
@@ -161,24 +203,22 @@ $icon1-index-size : (
     );
 $icon1-menu-header-size: (
     mobile : 4em,
-    tablette : 5.5em,
+    tablette : 5em,
     petit : 6.6em,
     grand : 8em,
     );
-$icon1-menu-header-margintop: 0.5em;
+$icon1-menu-header-margintop: (
+    mobile : .5em,
+    tablette : .7em,
+    petit : .8em,
+    grand : 1em
+    );
 $icon1-menu-footer: (
     mobile : 2em,
     tablette : 3em,
     petit : 3.5em,
     grand : 4em,
     );
-    // TABLEAU
-$barre1-width: (
-    mobile : 50%,
-    tablette : 60%,
-    petit : 75%,
-    grand : 100%
-);
 
 // KEYFRAMES
     // WIGGLE
@@ -194,5 +234,5 @@ $underline-duration: 300ms;
 $zoom-transition: 0.75s;
     // TRAIT ENTREE PLAT DESSERT
 $stroke-height: 5px;
-$bottom-stroke: -.5em;
+$bottom-stroke: 0em;
 $stroke-duration: 0.5s;

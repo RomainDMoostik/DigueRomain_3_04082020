@@ -235,7 +235,7 @@ h6.menu2, h6:link.menu2 {
 }
 h6.menu3, h6:link.menu3 {
   font-family: "Dancing Script", cursive;
-  background-image: linear-gradient(-15deg, #0431df, #0887fb);
+  background-image: linear-gradient(15deg, #0228dd, #229df9);
   background-size: 100%;
   padding-right: 10px;
   padding-left: 10px;
@@ -326,101 +326,6 @@ table.base-menu2 {
   }
 }
 
-.logo {
-  width: 450px;
-  margin: auto;
-}
-@media screen and (max-width: 800px) {
-  .logo {
-    width: 225px;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .logo {
-    width: 300px;
-  }
-}
-
-.button {
-  display: flex;
-  justify-content: center;
-  margin: 0 0 3em 0;
-}
-@media screen and (max-width: 800px) {
-  .button {
-    margin: 0 0 1.5em 0;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .button {
-    margin: 0 0 2em 0;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .button {
-    margin: 0 0 2.5em 0;
-  }
-}
-
-.btn-prochainement {
-  display: flex;
-  justify-content: left;
-  background-color: #579c87;
-  border-radius: 20px;
-  height: 115px;
-  width: 650px;
-  margin-top: 80px;
-  padding-left: 4%;
-}
-@media screen and (max-width: 800px) {
-  .btn-prochainement {
-    width: 300px;
-    height: 65px;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .btn-prochainement {
-    width: 580px;
-    height: 95px;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .btn-prochainement {
-    width: 600px;
-    height: 105px;
-  }
-}
-
-.points {
-  font-size: 4em;
-  font-weight: 300;
-  padding-top: 3%;
-  margin-left: 1%;
-  text-align: left;
-  color: #fdcb46;
-  white-space: normal;
-  overflow: hidden;
-  width: 3em;
-  animation: points 1500ms infinite;
-}
-@media screen and (max-width: 800px) {
-  .points {
-    font-size: 2em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  .points {
-    font-size: 2.5em;
-    margin-top: 4%;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .points {
-    font-size: 3em;
-    margin-top: 3%;
-  }
-}
-
 i.fas.fa-music {
   background-image: linear-gradient(to right, #f15861, #f78f6a);
   background-size: 100%;
@@ -488,6 +393,21 @@ i.fas.fa-music.footer {
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   i.fas.fa-music.footer {
     font-size: 3.5em;
+  }
+}
+
+.logo {
+  width: 450px;
+  margin: auto;
+}
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 225px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .logo {
+    width: 300px;
   }
 }
 
@@ -589,27 +509,86 @@ footer {
   transition: 0.75s;
 }
 
-/*.moment{
-    &::before{
-        content: "url('barres-menus__menu1D.svg')";
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        border: none;    
-        background-image: url('barres-menus__menu1D.svg') ;
-        padding: 0em 2em;
-    }
-    &::after{
-        content: "url('barres-menus__menu1D.svg')";
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        border: none;    
-        transform: scaleX(-1);
-        background-image: url('barres-menus__menu1D.svg') ;
-        padding: 0em 2em;
-    }
-} */
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3em 0;
+}
+@media screen and (max-width: 800px) {
+  .button {
+    margin: 0 0 1.5em 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .button {
+    margin: 0 0 2em 0;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .button {
+    margin: 0 0 2.5em 0;
+  }
+}
+
+.btn-prochainement {
+  display: flex;
+  justify-content: left;
+  background-color: #579c87;
+  border-radius: 20px;
+  height: 115px;
+  width: 650px;
+  margin-top: 80px;
+  padding-left: 4%;
+}
+@media screen and (max-width: 800px) {
+  .btn-prochainement {
+    width: 300px;
+    height: 65px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .btn-prochainement {
+    width: 580px;
+    height: 95px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .btn-prochainement {
+    width: 600px;
+    height: 105px;
+  }
+}
+
+.points {
+  font-size: 4em;
+  font-weight: 300;
+  padding-top: 3%;
+  margin-left: 1%;
+  text-align: left;
+  color: #fdcb46;
+  white-space: normal;
+  overflow: hidden;
+  width: 3em;
+  animation: points 1500ms infinite;
+}
+@media screen and (max-width: 800px) {
+  .points {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .points {
+    font-size: 2.5em;
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .points {
+    font-size: 3em;
+    margin-top: 3%;
+  }
+}
+
 hr {
   height: 1em;
   background-size: 100% 100%;
@@ -732,83 +711,83 @@ h3.moment:hover::before {
   }
 }
 
-.menu1 .carte {
+#menu1 .carte {
   background-color: #fcdfdb;
 }
-.menu1 hr {
+#menu1 hr {
   width: 30%;
   background-image: url("barres-menus__menu1G.svg");
 }
-.menu1 hr.D {
+#menu1 hr.D {
   background-image: url("barres-menus__menu1D.svg");
 }
-.menu1 h2 {
+#menu1 h2 {
   display: flex;
   flex-direction: column;
   font-family: "Pacifico", cursive;
   color: #3d1319;
 }
-.menu1 table, .menu1 h3.moment {
+#menu1 table, #menu1 h3.moment {
   font-family: "Kalam", cursive;
   color: #3d1319;
   font-size: 2.8em;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  .menu1 table, .menu1 h3.moment {
+  #menu1 table, #menu1 h3.moment {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu1 table, .menu1 h3.moment {
+  #menu1 table, #menu1 h3.moment {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu1 table, .menu1 h3.moment {
+  #menu1 table, #menu1 h3.moment {
     font-size: 2em;
   }
 }
-.menu1 table.base-menu, .menu1 h3.moment.base-menu {
+#menu1 table.base-menu, #menu1 h3.moment.base-menu {
   font-size: 1.5em;
   line-height: 1em;
   color: #3d1319;
 }
 @media screen and (max-width: 800px) {
-  .menu1 table.base-menu, .menu1 h3.moment.base-menu {
+  #menu1 table.base-menu, #menu1 h3.moment.base-menu {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu1 table.base-menu, .menu1 h3.moment.base-menu {
+  #menu1 table.base-menu, #menu1 h3.moment.base-menu {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu1 table.base-menu, .menu1 h3.moment.base-menu {
+  #menu1 table.base-menu, #menu1 h3.moment.base-menu {
     font-size: 1.3em;
   }
 }
-.menu1 table::before, .menu1 h3.moment::before {
+#menu1 table::before, #menu1 h3.moment::before {
   background-color: #3d1319;
 }
-.menu1td.menu-plat {
+#menu1td.menu-plat, #menu1 th.menu-plat {
   font-weight: 300;
 }
-.menu1td.menu-prix {
+#menu1td.menu-prix, #menu1 th.menu-prix {
   font-weight: 700;
 }
 
-.menu2 .carte {
+#menu2 .carte {
   background-color: #fff5fe;
 }
-.menu2 hr {
+#menu2 hr {
   width: 30%;
 }
-.menu2 hr.D {
+#menu2 hr.D {
   transform: scaleX(-1);
 }
-.menu2 h2 {
+#menu2 h2 {
   font-family: "Croissant One", cursive;
   background-image: linear-gradient(-20deg, #905bfd, #f89d3d);
   background-size: 100%;
@@ -820,96 +799,91 @@ h3.moment:hover::before {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu2 table {
-  /*&::before{
-      background-color: $col-2chic-txt-entree;
-  }*/
-}
-.menu2 table.base-menu {
+#menu2 table.base-menu {
   font-size: 1.5em;
   line-height: 1em;
 }
 @media screen and (max-width: 800px) {
-  .menu2 table.base-menu {
+  #menu2 table.base-menu {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu2 table.base-menu {
+  #menu2 table.base-menu {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu2 table.base-menu {
+  #menu2 table.base-menu {
     font-size: 1.3em;
   }
 }
-.menu2 h3.moment {
+#menu2 h3.moment {
   font-family: "Bitter", serif;
   font-size: 1.7em;
   text-align: center;
 }
 @media screen and (max-width: 800px) {
-  .menu2 h3.moment {
+  #menu2 h3.moment {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu2 h3.moment {
+  #menu2 h3.moment {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu2 h3.moment {
+  #menu2 h3.moment {
     font-size: 2em;
   }
 }
-.menu2 .entree {
+#menu2 .entree {
   color: #c77412;
 }
-.menu2 .entree hr {
+#menu2 .entree hr {
   background-image: url("barres-menus__menu2-entree.svg");
 }
-.menu2 .entree ::before {
+#menu2 .entree ::before {
   background-color: #c77412;
 }
-.menu2 .resistance {
+#menu2 .resistance {
   color: #a56799;
 }
-.menu2 .resistance hr {
+#menu2 .resistance hr {
   background-image: url("barres-menus__menu2-resistance.svg");
 }
-.menu2 .resistance ::before {
+#menu2 .resistance ::before {
   background-color: #a56799;
 }
-.menu2 .dessert {
+#menu2 .dessert {
   color: #6e4ccc;
 }
-.menu2 .dessert hr {
+#menu2 .dessert hr {
   background-image: url("barres-menus__menu2-dessert.svg");
 }
-.menu2 .dessert ::before {
+#menu2 .dessert ::before {
   background-color: #6e4ccc;
 }
-.menu2 td.menu-plat {
+#menu2 td.menu-plat {
   font-weight: 200;
 }
-.menu2 td.menu-prix {
+#menu2 td.menu-prix {
   font-weight: 300;
 }
 
-.menu3 .carte {
+#menu3 .carte {
   background-color: #f9f9f9;
 }
-.menu3 hr {
+#menu3 hr {
   width: 30%;
 }
-.menu3 hr.D {
+#menu3 hr.D {
   transform: scaleX(-1);
 }
-.menu3 h2 {
+#menu3 h2 {
   font-family: "Dancing Script", cursive;
-  background-image: linear-gradient(-15deg, #0431df, #0887fb);
+  background-image: linear-gradient(15deg, #0228dd, #229df9);
   background-size: 100%;
   padding-right: 10px;
   padding-left: 10px;
@@ -919,90 +893,87 @@ h3.moment:hover::before {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu3 table, .menu3 h3 {
+#menu3 table, #menu3 h3 {
   font-family: "Kalam", cursive;
   color: #333;
   font-weight: 300;
 }
-.menu3 h3.moment {
+#menu3 h3.moment {
   font-size: 1.7em;
 }
 @media screen and (max-width: 800px) {
-  .menu3 h3.moment {
+  #menu3 h3.moment {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu3 h3.moment {
+  #menu3 h3.moment {
     font-size: 1.5em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu3 h3.moment {
+  #menu3 h3.moment {
     font-size: 2em;
   }
 }
-.menu3 table {
+#menu3 table {
   width: 70%;
-  /*&::before{
-      background-color: $col-3delice-txt;
-  }*/
 }
-.menu3 table.base-menu {
+#menu3 table.base-menu {
   font-size: 1.5em;
   line-height: 1em;
 }
 @media screen and (max-width: 800px) {
-  .menu3 table.base-menu {
+  #menu3 table.base-menu {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu3 table.base-menu {
+  #menu3 table.base-menu {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu3 table.base-menu {
+  #menu3 table.base-menu {
     font-size: 1.3em;
   }
 }
-.menu3 .entree hr {
+#menu3 .entree hr {
   background-image: url("barres-menus__menu3-entree.svg");
 }
-.menu3 .entree ::before {
+#menu3 .entree ::before {
   background-color: #0228dd;
 }
-.menu3 .resistance hr {
+#menu3 .resistance hr {
   background-image: url("barres-menus__menu3-resistance.svg");
 }
-.menu3 .resistance ::before {
+#menu3 .resistance ::before {
   background-color: #0670f3;
 }
-.menu3 .dessert hr {
+#menu3 .dessert hr {
   background-image: url("barres-menus__menu3-dessert.svg");
 }
-.menu3 .dessert ::before {
+#menu3 .dessert ::before {
   background-color: #229df9;
 }
-.menu3 td.menu-plat {
+#menu3 td.menu-plat {
   font-weight: 200;
 }
-.menu3 td.menu-prix {
+#menu3 td.menu-prix {
   font-weight: 500;
 }
 
-.menu4 .carte {
+#menu4 .carte {
   background-color: #fdfffd;
 }
-.menu4 hr {
+#menu4 hr {
   background-image: url("barres-menus__menu4G.svg");
   width: 30%;
 }
-.menu4 hr.D {
+#menu4 hr.D {
   transform: scaleX(-1);
 }
-.menu4 h2 {
+#menu4 h2 {
   font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(30deg, #3d9339, #bfff7e);
   background-size: 100%;
@@ -1014,58 +985,58 @@ h3.moment:hover::before {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-.menu4 table, .menu4 h3 {
+#menu4 table, #menu4 h3 {
   font-family: "Kalam", cursive;
   color: #444;
   font-weight: 300;
 }
-.menu4 h3.moment {
+#menu4 h3.moment {
   font-size: 2em;
 }
 @media screen and (max-width: 800px) {
-  .menu4 h3.moment {
+  #menu4 h3.moment {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu4 h3.moment {
+  #menu4 h3.moment {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu4 h3.moment {
+  #menu4 h3.moment {
     font-size: 1.7em;
   }
 }
-.menu4 h3.moment::before {
+#menu4 h3.moment::before {
   background-color: #72bf56;
 }
-.menu4 table {
+#menu4 table {
   width: 70%;
 }
-.menu4 table.base-menu {
+#menu4 table.base-menu {
   font-size: 1.5em;
   line-height: 1em;
 }
 @media screen and (max-width: 800px) {
-  .menu4 table.base-menu {
+  #menu4 table.base-menu {
     font-size: 1em;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .menu4 table.base-menu {
+  #menu4 table.base-menu {
     font-size: 1.2em;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .menu4 table.base-menu {
+  #menu4 table.base-menu {
     font-size: 1.3em;
   }
 }
-.menu4 td.menu-plat {
+#menu4 td.menu-plat {
   font-weight: 200;
 }
-.menu4 td.menu-prix {
+#menu4 td.menu-prix {
   font-weight: 500;
 }
 

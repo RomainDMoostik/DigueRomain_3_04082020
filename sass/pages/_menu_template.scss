@@ -1,25 +1,3 @@
-/*.moment{
-    &::before{
-        content: "url('barres-menus__menu1D.svg')";
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        border: none;    
-        background-image: url('barres-menus__menu1D.svg') ;
-        padding: 0em 2em;
-    }
-    &::after{
-        content: "url('barres-menus__menu1D.svg')";
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: top center;
-        border: none;    
-        transform: scaleX(-1);
-        background-image: url('barres-menus__menu1D.svg') ;
-        padding: 0em 2em;
-    }
-} */
-
 hr{
     height: 1em;
     background-size: 100% 100%;
@@ -27,11 +5,6 @@ hr{
     background-position: top center;
     border: none;
     margin : 0em;
-    //background-image: url('barres-menus__menu1G.svg');
-    // &.D{
-        //transform: scaleX(-1);
-        //background-image: url('barres-menus__menu1D.svg');
-    //}
 }
 
 .carte{
@@ -95,7 +68,7 @@ h3.moment{
     text-align: center;
     display: inline-block;
     position: relative;
-    &::before{
+    &::before{          // SURLIGNEMENT MENU
         content: '';
         position: absolute;
         width: 100%;
@@ -103,7 +76,6 @@ h3.moment{
         height: $stroke-height;
         left: 0;
         bottom: $bottom-stroke;
-        //background-color: $col-1note-txt;
         transform-origin: bottom right ;
         transition: transform $stroke-duration ease-out;           
     }

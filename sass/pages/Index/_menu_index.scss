@@ -1,3 +1,58 @@
+// 4 MENUS
+
+.liste-menus{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu{
+    @include menu-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: $small-menu-width;
+    height: $small-menu-height;
+    margin: $margin-menu-index;
+    overflow: hidden;
+    text-align: center;
+    transform: scale(1);
+    opacity: 1;
+    transition: all $menu-timing;
+    &--1note{
+        background-color: $col-1note ;
+    }
+    &--2chic{
+        background-color: $col-2chic;
+    }
+    &--3delice{
+        background-color: $col-3delice;
+    }
+    &--4gout{
+        background-color: $col-4gout;
+    }
+    &:hover .zoom{
+        transform: $menu-scale;
+        opacity: $menu-opacity;
+    }
+    @include mobile{
+        width: $small-menu-width*2;
+        height: $small-menu-height/1.5;
+    }
+    @include tablette {
+        height: $small-menu-height/2;
+    }
+
+}
+
+.zoom{
+    max-width: 100%;
+    max-height: 100%;
+    transition: $zoom-transition;
+}
+
 .button{
     display: flex;
     justify-content: center;
@@ -13,6 +68,7 @@
     }
 }
 
+// PROCHAINEMENT
 .btn-prochainement{
     display: flex;
     justify-content: left;

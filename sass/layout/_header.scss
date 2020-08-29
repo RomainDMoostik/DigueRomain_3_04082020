@@ -1,3 +1,14 @@
+.logo {
+    width: $logowidth;
+    margin:auto;
+    @include mobile{
+        width: $logowidth/2 ;
+    }
+    @include tablette{
+        width: $logowidth/1.5;
+    }
+}
+
 header{
     display: flex;
     width: 100%;

@@ -1,10 +1,9 @@
-.menu2{
+#menu2{
     & .carte{
         background-color: $col-2chic;
     }
     & hr{
         width: 30%;
-        //background-image: url('barres-menus__menu2G.svg');
         &.D{
         transform: scaleX(-1);
         }
@@ -26,9 +25,6 @@
                 font-size: map-get($table1-font-size, petit);
             }
         }
-        /*&::before{
-            background-color: $col-2chic-txt-entree;
-        }*/
     }
     & h3.moment{
         font-family: $menu2-font2;

@@ -1,9 +1,8 @@
-.menu3{
+#menu3{
     & .carte{
         background-color: $col-3delice;
     }
     & hr{
-        //background-image: url('barres-menus__menu3G.svg');
         width: 30%;
         &.D{
         transform: scaleX(-1);
@@ -44,9 +43,6 @@
                 font-size: map-get($table1-font-size, petit);
             }
         }
-        /*&::before{
-            background-color: $col-3delice-txt;
-        }*/
     }
 
     & .entree{

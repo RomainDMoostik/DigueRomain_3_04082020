@@ -1,4 +1,4 @@
-.menu1{
+#menu1{
     & .carte{
         background-color: $col-1note;
     }
@@ -47,7 +47,7 @@
             background-color: $col-1note-txt;
         }
     }
-    &td{
+    &td, th{
         &.menu-plat {
             font-weight: 300;
         }

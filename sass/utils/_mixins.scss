@@ -13,7 +13,7 @@
 }
 
 @mixin gradient-menu3 {
-    background-image: linear-gradient(-15deg, #0431df, #0887fb);
+    background-image: linear-gradient(15deg, $col-3delice-txt-entree, $col-3delice-txt-dessert);
 }
 
 @mixin gradient-menu4 {

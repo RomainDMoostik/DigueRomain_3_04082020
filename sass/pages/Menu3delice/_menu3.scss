@@ -1,3 +1,12 @@
+// VARIABLES
+$menu3-font-size: (  //ENTREE PLAT DESSERT
+    mobile : 1em,
+    tablette : 1.5em,
+    petit : 2em,
+    grand : 1.7em,
+);
+
+// STRUCTURE
 #menu3{
     & .carte{
         background-color: $col-3delice;
@@ -31,16 +40,16 @@
     & table{
         width: 70%;
         &.base-menu{
-            font-size: map-get($table1-font-size, grand);
-            line-height: map-get($table1-line-height, grand);
+            font-size: map-get($table-font-size, grand);
+            line-height: map-get($table-line-height, grand);
             @include mobile{
-                font-size: map-get($table1-font-size, mobile);
+                font-size: map-get($table-font-size, mobile);
             }
             @include tablette{
-                font-size: map-get($table1-font-size, tablette);
+                font-size: map-get($table-font-size, tablette);
             }
             @include petit-ecran{
-                font-size: map-get($table1-font-size, petit);
+                font-size: map-get($table-font-size, petit);
             }
         }
     }

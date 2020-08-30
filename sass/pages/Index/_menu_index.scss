@@ -1,12 +1,127 @@
-// TYPOS
+// VARIABLES
+    // 4 MENUS
+$small-menu-width: 40%;
+$small-menu-height: 50em;
+$margin-menu-index: 4%;
+    // PROCHAINEMENT
+$encart-width : (
+    mobile :  300px,
+    tablette : 580px,
+    petit : 600px, 
+    grand : 650px,
+);
+$encart-height : (
+    mobile :  65px,
+    tablette : 95px,
+    petit : 105px, 
+    grand : 115px,
+);
+$margin-encart : (
+    mobile :  0 0 1.5em 0,
+    tablette : 0 0 2em 0,
+    petit : 0 0 2.5em 0, 
+    grand : 0 0 3em 0,
+);
+        //H3
+$encart-font-size: (
+    mobile : 2em,
+    tablette : 2.5em,
+    petit: 3em,
+    grand : 4em,
+);
+        //H5
+$h5-font-size: ( // 4 Menus "Menu"
+mobile : 2.2em,
+tablette : 3.2em,
+petit : 3.8em,
+grand : 4em
+);
+    //H6
+$h6-font-size: ( // 4 Menus Titre resto
+mobile : 1.7em,
+tablette : 2.3em,
+petit : 2.7em,
+grand : 3em,
+);
+    // MENU
+$menu-scale: scale(1.1);
+$menu-timing: 450ms;
+$menu-opacity: .5;
+$underline-timing: cubic-bezier(.48,.01,.7,.97);
+$underline-duration: 300ms;
+$zoom-transition: 0.75s;
+    
+
+// FONTS
 h3.annonce{
-    font-size: map-get($btn-font-size, grand );
+    font-size: map-get($encart-font-size, grand );
     color: $col-sec ;
     font-weight: 300;
     text-align: left;
     margin-top: 3%;
     @include mobile{
-        font-size: map-get($btn-font-size, mobile );
+        font-size: map-get($encart-font-size, mobile );
+    }
+}
+
+    // "Menu" 4 menus index
+h5{
+    font-size: map-get($h5-font-size, grand );
+    margin: 1em 0 0 0;
+    &.menu{
+        &1{
+            text-transform: uppercase;
+            color: $col-1note-txt;
+            font-family: $menu-font;
+        }
+        &2{
+            font-family: $menu-font2;
+            color: $col-2chic-txt-entree;
+        }
+        &3{
+            color: $col-3delice-txt;
+            font-family: $menu-font;
+        }
+        &4{
+            color: $col-4gout-txt;
+            font-family: $menu-font;
+        }
+    }
+    @include mobile{
+        font-size: map-get($h5-font-size, mobile );
+    }
+    @include tablette{
+        font-size: map-get($h5-font-size, tablette );
+    }
+    @include petit-ecran{
+        font-size: map-get($h5-font-size, petit );
+    }
+}
+
+    // Titres restos 4 Menus Index
+h6, h6:link{
+    font-size: map-get($h6-font-size, grand );
+    margin: 0;
+    &.menu1{
+        @include titre-menu1;
+    }
+    &.menu2{
+        @include titre-menu2;
+    }
+    &.menu3{
+        @include titre-menu3;
+    }
+    &.menu4{
+        @include titre-menu4;
+    }
+    @include mobile{
+        font-size: map-get($h6-font-size, mobile );
+    }
+    @include tablette{
+        font-size: map-get($h6-font-size, tablette );
+    }
+    @include petit-ecran{
+        font-size: map-get($h6-font-size, petit );
     }
 }
 
@@ -77,15 +192,15 @@ h3.annonce{
 .encart{
     display: flex;
     justify-content: center;
-    margin: map-get($margin-btn, grand );
+    margin: map-get($margin-encart, grand );
     @include mobile {
-        margin: map-get($margin-btn, mobile );
+        margin: map-get($margin-encart, mobile );
     }
     @include tablette {
-        margin: map-get($margin-btn, tablette );
+        margin: map-get($margin-encart, tablette );
     }
     @include petit-ecran {
-        margin: map-get($margin-btn, petit );
+        margin: map-get($margin-encart, petit );
     }
 }
 
@@ -94,24 +209,24 @@ h3.annonce{
     justify-content: center;
     background-color: $col-prim;
     border-radius: 20px;
-    height: map-get($btn-height, grand );
-    width: map-get($btn-width, grand );
+    height: map-get($encart-height, grand );
+    width: map-get($encart-width, grand );
     @include mobile{
-        width: map-get($btn-width, mobile );
-        height: map-get($btn-height, mobile );
+        width: map-get($encart-width, mobile );
+        height: map-get($encart-height, mobile );
     }
     @include tablette{
-        width: map-get($btn-width, tablette );
-        height: map-get($btn-height, tablette );
+        width: map-get($encart-width, tablette );
+        height: map-get($encart-height, tablette );
     }
     @include petit-ecran{
-        width: map-get($btn-width, petit );
-        height: map-get($btn-height, petit );
+        width: map-get($encart-width, petit );
+        height: map-get($encart-height, petit );
     }
 }
 
 .points{
-    font-size: map-get($btn-font-size, grand );
+    font-size: map-get($encart-font-size, grand );
     font-weight: 300;
     padding-top: 3%;
     margin-left: 49%;
@@ -122,14 +237,14 @@ h3.annonce{
     width: 3em;
     animation: points 1500ms infinite; 
     @include mobile{
-        font-size: map-get($btn-font-size, mobile);
+        font-size: map-get($encart-font-size, mobile);
     }
     @include tablette{
-        font-size: map-get($btn-font-size, tablette);
+        font-size: map-get($encart-font-size, tablette);
         margin-top : 4%;
     }
     @include petit-ecran{
-        font-size: map-get($btn-font-size, petit);
+        font-size: map-get($encart-font-size, petit);
         margin-top : 3%;
     }
 }

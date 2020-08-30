@@ -1,3 +1,33 @@
+// VARIABLES
+$footer-padding: 2%;
+//H4
+$footer-font-size : ( //FOOTER
+mobile : .8em,
+tablette : 1.2em,
+petit : 1.5em,
+grand : 2em,
+);
+
+
+// FONTS
+h4{
+    .footer{
+        color: $col-sec;
+        font-size : map-get($footer-font-size, grand );
+        @include mobile {
+            font-size : map-get($footer-font-size, mobile );
+        }
+        @include tablette {
+            font-size : map-get($footer-font-size, tablette );
+        }
+        @include petit-ecran {
+            font-size : map-get($footer-font-size, petit );
+        }
+    }
+}
+
+
+// STRUCTURE
 footer{
     position: fixed;
     bottom: 0em;
@@ -16,6 +46,7 @@ footer{
     }
 } 
 
+// ANIM
 .footer{
     &__txt{
         &:hover{

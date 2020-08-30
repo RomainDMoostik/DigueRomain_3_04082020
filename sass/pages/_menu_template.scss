@@ -1,3 +1,107 @@
+// VARIABLES
+    //STRUCTURE
+$big-menu-width : 85%;
+$big-menu-height: 100%;
+$header-menu-margin : (
+    mobile : .9em 0em .4em 0em,
+    tablette : 1.3 0em .6em 0em,
+    petit : 1.7 0em .8em 0em,
+    grand : 2em 0em 1em 0em
+);
+$footer-menu-margin :  (
+    mobile : 2em 0 2.5em 0,
+    tablette : 3em 0 4em 0,
+    petit : 4.5em 0 6em 0,
+    grand : 6em 0 8em 0 
+);
+$padding-menu-td : (
+    mobile : .1em 0 .5em 0 ,
+    tablette : .1em 0 .6em 0 ,
+    petit : .2em 0 .8em 0 ,
+    grand : .2em 0em 1em 0 ,
+);
+    // TABLEAU
+$table-font-size: (
+    mobile : 1em,
+    tablette : 1.2em,
+    petit : 1.3em,
+    grand : 1.5em
+);
+$table-line-height: (
+    mobile : .7em,
+    tablette : .8em,
+    petit : .9em,
+    grand : 1em
+);
+    // BARRES GRAND MENU
+$width-barre-menu1: 30%;
+    // H1
+$h1-titre-menu-size: 4em;
+    //H2
+$h2-titre-menu-margin-top: 0.5em;
+$h2-size: (
+    mobile : 1.5em,
+    tablette : 2.5em,
+    petit: 3em,
+    grand : 4em,
+);
+$h2-footer-font-size: (
+    mobile : 1.2em,
+    tablette : 1.8em,
+    petit: 2.5em,
+    grand : 3em,
+);
+    // TRAIT ANIM ENTREE PLAT DESSERT
+$stroke-height: 5px;
+$bottom-stroke: 0em;
+$stroke-duration: 0.5s;
+
+
+// FONTS
+h1.titre-resto{
+    font-size: $h1-titre-menu-size;
+    margin: 1.5em .5em 1em .5em;
+    color: $black;
+    text-align: center; 
+    font-weight: 700;
+    @include mobile{
+        font-size: 2em ;
+    }
+}
+
+h2{
+    &.resto{
+        font-size: map-get($h2-size, grand );
+        color: $col-1note-txt;
+        @include mobile{
+            font-size: map-get($h2-size, mobile ) ;
+        }
+        @include tablette{
+            font-size: map-get($h2-size, tablette ) ;
+        }
+        @include petit-ecran{
+            font-size: map-get($h2-size, petit ) ;
+        }
+    }
+    &.footer-menu{
+        font-size: map-get($h2-footer-font-size, grand );
+        font-weight: 500;
+        margin:  0 0 0 .2em;
+        @include mobile{
+            font-size: map-get($h2-footer-font-size, mobile );
+        }
+        @include tablette{
+            font-size: map-get($h2-footer-font-size, tablette );
+        }
+        @include petit-ecran{
+            font-size: map-get($h2-footer-font-size, petit );
+        }
+    }
+}
+
+
+
+// ELEMENTS
 hr{
     height: 1em;
     background-size: 100% 100%;

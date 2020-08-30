@@ -1,0 +1,51 @@
+    // H2
+$h2-legal-font-size: (
+    mobile : 1.5em,
+    tablette : 2em,
+    petit: 3em,
+    grand : 3.5em,
+);
+    //P
+$text : (
+    mobile : .7em,
+    tablette : .8em,
+    petit : .9em,
+    grand : 1em
+);
+
+h2.legal{
+    font-family: $lineale;
+    color : $black;
+    font-size: map-get($h2-legal-font-size, grand );
+    font-weight: 500;
+    margin: 3% 0 1% 0 ;
+    @include mobile{
+        font-size: map-get($h2-legal-font-size, mobile );
+    }
+    @include tablette{
+        font-size: map-get($h2-legal-font-size, tablette );
+    }
+    @include petit-ecran{
+        font-size: map-get($h2-legal-font-size, petit );
+    }
+}
+
+
+
+p {
+    font-family: $lineale;
+    color: $black;
+    padding: 3%;
+    text-align: left;
+    line-height: 120%;
+    font-size: map-get($text, grand );
+    @include mobile {
+        font-size: map-get($text, mobile );
+    }
+    @include tablette {
+        font-size: map-get($text, tablette);
+    }
+    @include petit-ecran {
+        font-size: map-get($text, petit);
+    }
+}

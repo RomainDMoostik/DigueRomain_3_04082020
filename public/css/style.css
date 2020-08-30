@@ -52,250 +52,11 @@ h1, h3, h4 {
   font-family: "Montserrat", sans-serif;
 }
 
-h1.titre-resto {
-  font-size: 4em;
-  margin: 1.5em 0.5em 1em 0.5em;
-  color: #353535;
-  text-align: center;
-  font-weight: 700;
-}
-@media screen and (max-width: 800px) {
-  h1.titre-resto {
-    font-size: 2em;
-  }
-}
-
-h2.resto {
-  font-size: 4em;
-  color: #3d1319;
-}
-@media screen and (max-width: 800px) {
-  h2.resto {
-    font-size: 1.5em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h2.resto {
-    font-size: 2.5em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h2.resto {
-    font-size: 3em;
-  }
-}
-h2.footer-menu {
-  font-size: 3em;
-  font-weight: 500;
-  margin: 0 0 0 0.2em;
-}
-@media screen and (max-width: 800px) {
-  h2.footer-menu {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h2.footer-menu {
-    font-size: 1.8em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h2.footer-menu {
-    font-size: 2.5em;
-  }
-}
-h2.legal {
-  font-family: "Montserrat", sans-serif;
-  color: #353535;
-  font-size: 3.5em;
-  font-weight: 500;
-  margin: 3% 0 1% 0;
-}
-@media screen and (max-width: 800px) {
-  h2.legal {
-    font-size: 1.5em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h2.legal {
-    font-size: 2em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h2.legal {
-    font-size: 3em;
-  }
-}
-
-h4 .footer {
-  color: #fdcb46;
-  font-size: 2em;
-}
-@media screen and (max-width: 800px) {
-  h4 .footer {
-    font-size: 0.8em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h4 .footer {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h4 .footer {
-    font-size: 1.5em;
-  }
-}
-
-h5 {
-  font-size: 4em;
-  margin: 1em 0 0 0;
-}
-h5.menu1 {
-  text-transform: uppercase;
-  color: #3d1319;
-  font-family: "Kalam", cursive;
-}
-h5.menu2 {
-  font-family: gelasio, courier, serif;
-  color: #c77412;
-}
-h5.menu3 {
-  color: #0887fb;
-  font-family: "Kalam", cursive;
-}
-h5.menu4 {
-  color: #72bf56;
-  font-family: "Kalam", cursive;
-}
-@media screen and (max-width: 800px) {
-  h5 {
-    font-size: 2.2em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h5 {
-    font-size: 3.2em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h5 {
-    font-size: 3.8em;
-  }
-}
-
-h6, h6:link {
-  font-size: 3em;
-  margin: 0;
-}
-h6.menu1, h6:link.menu1 {
-  font-family: "Croissant One", cursive;
-  font-family: "Pacifico", cursive;
-  color: #3d1319;
-}
-h6.menu2, h6:link.menu2 {
-  font-family: "Croissant One", cursive;
-  background-image: linear-gradient(-20deg, #905bfd, #f89d3d);
-  background-size: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-h6.menu3, h6:link.menu3 {
-  font-family: "Dancing Script", cursive;
-  background-image: linear-gradient(15deg, #0228dd, #229df9);
-  background-size: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-h6.menu4, h6:link.menu4 {
-  font-family: "Kaushan Script", cursive;
-  background-image: linear-gradient(30deg, #3d9339, #bfff7e);
-  background-size: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-@media screen and (max-width: 800px) {
-  h6, h6:link {
-    font-size: 1.7em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  h6, h6:link {
-    font-size: 2.3em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  h6, h6:link {
-    font-size: 2.7em;
-  }
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  color: #353535;
-  padding: 3%;
-  text-align: left;
-  line-height: 120%;
-  font-size: 1em;
-}
-@media screen and (max-width: 800px) {
-  p {
-    font-size: 0.7em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  p {
-    font-size: 0.8em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  p {
-    font-size: 0.9em;
-  }
-}
-
 a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 a.footer, a:visited.footer, a:hover.footer, a:active.footer {
   color: #fdcb46;
-}
-
-table.base-menu2 {
-  font-size: 1.5em;
-  line-height: 1em;
-  color: #c77412;
-  font-family: "Croissant One", cursive;
-}
-@media screen and (max-width: 800px) {
-  table.base-menu2 {
-    font-size: 1em;
-  }
-}
-@media screen and (min-width: 800px) and (max-width: 1000px) {
-  table.base-menu2 {
-    font-size: 1.2em;
-  }
-}
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
-  table.base-menu2 {
-    font-size: 1.3em;
-  }
 }
 
 i.fas.fa-music {
@@ -401,6 +162,26 @@ header {
   }
 }
 
+h4 .footer {
+  color: #fdcb46;
+  font-size: 2em;
+}
+@media screen and (max-width: 800px) {
+  h4 .footer {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h4 .footer {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h4 .footer {
+    font-size: 1.5em;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0em;
@@ -435,6 +216,104 @@ h3.annonce {
 @media screen and (max-width: 800px) {
   h3.annonce {
     font-size: 2em;
+  }
+}
+
+h5 {
+  font-size: 4em;
+  margin: 1em 0 0 0;
+}
+h5.menu1 {
+  text-transform: uppercase;
+  color: #3d1319;
+  font-family: "Kalam", cursive;
+}
+h5.menu2 {
+  font-family: gelasio, courier, serif;
+  color: #c77412;
+}
+h5.menu3 {
+  color: #0887fb;
+  font-family: "Kalam", cursive;
+}
+h5.menu4 {
+  color: #72bf56;
+  font-family: "Kalam", cursive;
+}
+@media screen and (max-width: 800px) {
+  h5 {
+    font-size: 2.2em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h5 {
+    font-size: 3.2em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h5 {
+    font-size: 3.8em;
+  }
+}
+
+h6, h6:link {
+  font-size: 3em;
+  margin: 0;
+}
+h6.menu1, h6:link.menu1 {
+  font-family: "Croissant One", cursive;
+  font-family: "Pacifico", cursive;
+  color: #3d1319;
+}
+h6.menu2, h6:link.menu2 {
+  font-family: "Croissant One", cursive;
+  background-image: linear-gradient(-20deg, #905bfd, #f89d3d);
+  background-size: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h6.menu3, h6:link.menu3 {
+  font-family: "Dancing Script", cursive;
+  background-image: linear-gradient(15deg, #0228dd, #229df9);
+  background-size: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+h6.menu4, h6:link.menu4 {
+  font-family: "Kaushan Script", cursive;
+  background-image: linear-gradient(30deg, #3d9339, #bfff7e);
+  background-size: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+@media screen and (max-width: 800px) {
+  h6, h6:link {
+    font-size: 1.7em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h6, h6:link {
+    font-size: 2.3em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h6, h6:link {
+    font-size: 2.7em;
   }
 }
 
@@ -576,6 +455,59 @@ h3.annonce {
   .points {
     font-size: 3em;
     margin-top: 3%;
+  }
+}
+
+h1.titre-resto {
+  font-size: 4em;
+  margin: 1.5em 0.5em 1em 0.5em;
+  color: #353535;
+  text-align: center;
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  h1.titre-resto {
+    font-size: 2em;
+  }
+}
+
+h2.resto {
+  font-size: 4em;
+  color: #3d1319;
+}
+@media screen and (max-width: 800px) {
+  h2.resto {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h2.resto {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h2.resto {
+    font-size: 3em;
+  }
+}
+h2.footer-menu {
+  font-size: 3em;
+  font-weight: 500;
+  margin: 0 0 0 0.2em;
+}
+@media screen and (max-width: 800px) {
+  h2.footer-menu {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h2.footer-menu {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h2.footer-menu {
+    font-size: 2.5em;
   }
 }
 
@@ -1030,6 +962,53 @@ h3.moment:hover::before {
 }
 #menu4 td.menu-prix {
   font-weight: 500;
+}
+
+h2.legal {
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
+  font-size: 3.5em;
+  font-weight: 500;
+  margin: 3% 0 1% 0;
+}
+@media screen and (max-width: 800px) {
+  h2.legal {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  h2.legal {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  h2.legal {
+    font-size: 3em;
+  }
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  color: #353535;
+  padding: 3%;
+  text-align: left;
+  line-height: 120%;
+  font-size: 1em;
+}
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 0.7em;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  p {
+    font-size: 0.8em;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  p {
+    font-size: 0.9em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

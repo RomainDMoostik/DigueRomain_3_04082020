@@ -64,10 +64,12 @@ td{
     }
 }
 
-h3.moment{
+h3.moment{ //ENTREE PLAT DESSERT
     text-align: center;
     display: inline-block;
     position: relative;
+    margin : 1em;
+    line-height: 120%;
     &::before{          // SURLIGNEMENT MENU
         content: '';
         position: absolute;

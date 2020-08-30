@@ -127,34 +127,6 @@ h2.legal {
   }
 }
 
-h3.btn {
-  font-size: 4em;
-  color: #fdcb46;
-  font-weight: 300;
-  text-align: left;
-  margin-top: 3%;
-}
-@media screen and (max-width: 800px) {
-  h3.btn {
-    font-size: 2em;
-  }
-}
-h3.moment {
-  margin: 1em;
-  line-height: 120%;
-  /*font-size: map-get($menu1-font-size, grand );
-  text-align: center;
-  @include mobile {
-      font-size: map-get($menu1-font-size, mobile );
-  }
-  @include tablette {
-      font-size: map-get($menu1-font-size, tablette );
-  }
-  @include petit-ecran {
-      font-size: map-get($menu1-font-size, petit );
-  }*/
-}
-
 h4 .footer {
   color: #fdcb46;
   font-size: 2em;
@@ -453,6 +425,19 @@ footer {
   animation: wiggle 300ms cubic-bezier(0.27, 0.08, 0.62, 0.81) infinite alternate-reverse;
 }
 
+h3.annonce {
+  font-size: 4em;
+  color: #fdcb46;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 3%;
+}
+@media screen and (max-width: 800px) {
+  h3.annonce {
+    font-size: 2em;
+  }
+}
+
 .liste-menus {
   display: flex;
   flex-wrap: wrap;
@@ -509,51 +494,56 @@ footer {
   transition: 0.75s;
 }
 
-.button {
+.prochainement {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.encart {
   display: flex;
   justify-content: center;
   margin: 0 0 3em 0;
 }
 @media screen and (max-width: 800px) {
-  .button {
+  .encart {
     margin: 0 0 1.5em 0;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .button {
+  .encart {
     margin: 0 0 2em 0;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .button {
+  .encart {
     margin: 0 0 2.5em 0;
   }
 }
 
-.btn-prochainement {
+.encart-prochainement {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   background-color: #579c87;
   border-radius: 20px;
   height: 115px;
   width: 650px;
-  margin-top: 80px;
-  padding-left: 4%;
 }
 @media screen and (max-width: 800px) {
-  .btn-prochainement {
+  .encart-prochainement {
     width: 300px;
     height: 65px;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1000px) {
-  .btn-prochainement {
+  .encart-prochainement {
     width: 580px;
     height: 95px;
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
-  .btn-prochainement {
+  .encart-prochainement {
     width: 600px;
     height: 105px;
   }
@@ -563,7 +553,7 @@ footer {
   font-size: 4em;
   font-weight: 300;
   padding-top: 3%;
-  margin-left: 1%;
+  margin-left: 49%;
   text-align: left;
   color: #fdcb46;
   white-space: normal;
@@ -671,6 +661,8 @@ h3.moment {
   text-align: center;
   display: inline-block;
   position: relative;
+  margin: 1em;
+  line-height: 120%;
 }
 h3.moment::before {
   content: "";

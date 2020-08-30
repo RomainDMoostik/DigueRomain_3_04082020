@@ -78,34 +78,6 @@ h2{
     }
 }
 
-h3{
-    &.btn{
-        font-size: map-get($btn-font-size, grand );
-        color: $col-sec ;
-        font-weight: 300;
-        text-align: left;
-        margin-top: 3%;
-        @include mobile{
-            font-size: map-get($btn-font-size, mobile );
-        }
-    }
-    &.moment{ //ENTREE PLAT DESSERT
-        margin : 1em;
-        line-height: 120%;
-        /*font-size: map-get($menu1-font-size, grand );
-        text-align: center;
-        @include mobile {
-            font-size: map-get($menu1-font-size, mobile );
-        }
-        @include tablette {
-            font-size: map-get($menu1-font-size, tablette );
-        }
-        @include petit-ecran {
-            font-size: map-get($menu1-font-size, petit );
-        }*/
-    }
-}
-
 // Footer Mention légales/contact
 h4{
     .footer{

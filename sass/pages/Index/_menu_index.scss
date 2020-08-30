@@ -1,3 +1,15 @@
+// TYPOS
+h3.annonce{
+    font-size: map-get($btn-font-size, grand );
+    color: $col-sec ;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 3%;
+    @include mobile{
+        font-size: map-get($btn-font-size, mobile );
+    }
+}
+
 // 4 MENUS
 
 .liste-menus{
@@ -53,7 +65,16 @@
     transition: $zoom-transition;
 }
 
-.button{
+// PROCHAINEMENT
+.prochainement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: $footer-height*2;
+
+}
+
+.encart{
     display: flex;
     justify-content: center;
     margin: map-get($margin-btn, grand );
@@ -68,16 +89,13 @@
     }
 }
 
-// PROCHAINEMENT
-.btn-prochainement{
+.encart-prochainement{
     display: flex;
-    justify-content: left;
+    justify-content: center;
     background-color: $col-prim;
     border-radius: 20px;
     height: map-get($btn-height, grand );
     width: map-get($btn-width, grand );
-    margin-top: $footer-height*2;
-    padding-left: 4%;
     @include mobile{
         width: map-get($btn-width, mobile );
         height: map-get($btn-height, mobile );
@@ -96,7 +114,7 @@
     font-size: map-get($btn-font-size, grand );
     font-weight: 300;
     padding-top: 3%;
-    margin-left: 1%;
+    margin-left: 49%;
     text-align: left;
     color: $col-sec;
     white-space: normal;
